@@ -1,0 +1,46 @@
+# データのライセンス — ikari-uta
+
+本リポジトリはコードとデータで条件が異なる。**コードは MIT(`LICENSE`)、データは以下による。**
+
+## 1. 底本(原文ギリシャ語)
+
+- 作品: Homer, *Ilias*(紀元前 8 世紀頃。**作品そのものはパブリックドメイン**)
+- 校訂: D. B. Monro & T. W. Allen, *Homeri Opera*, Editio Tertia, Oxford: Clarendon Press
+- 電子化・配布: **Perseus Digital Library, Tufts University**
+- URN: `urn:cts:greekLit:tlg0012.tlg001.perseus-grc2`
+- 出所: https://github.com/PerseusDL/canonical-greekLit
+- ライセンス: **CC BY-SA 4.0**
+
+## 2. 英訳(照合用)
+
+- 訳: A. T. Murray, *The Iliad*, Loeb Classical Library, London: W. Heinemann, 1924
+- 電子化・配布: Perseus Digital Library, Tufts University
+- URN: `urn:cts:greekLit:tlg0012.tlg001.perseus-eng3`
+- ライセンス: **CC BY-SA 4.0**
+
+## 3. 本プロジェクトが生成したデータ
+
+`data/canonical/`、`data/oracle/`、`data/ja/`、`out/data/` に置かれるデータは、
+上記 CC BY-SA 4.0 の底本に由来する派生物である。したがって——
+
+> **本プロジェクトの生成データは CC BY-SA 4.0 で提供する。**
+
+継承(ShareAlike)義務があるため、再配布・改変配布の際も同じ条件を課すこと。
+
+### 和訳について
+
+`data/ja/` の日本語訳は **Claude(Anthropic)による機械翻訳**であり、
+学術的な定訳ではない。本プロジェクトが検査で保証するのは
+
+- 原文の行を落としていないこと(G-01)
+- 行がずれていないこと(G-02)
+- 固有名詞の表記が揺れていないこと(G-03)
+- 別字種が混入していないこと(G-04)
+
+であって、**訳の正確さ・文学的品質ではない**。引用・参照の際はこの点に留意されたい。
+
+## 4. 帰属表示の文例
+
+> 原文: Homer, *Ilias*, ed. D. B. Monro & T. W. Allen (Oxford, 1920).
+> Perseus Digital Library, Tufts University. CC BY-SA 4.0.
+> 日本語訳: ikari-uta プロジェクト(機械翻訳)。CC BY-SA 4.0.

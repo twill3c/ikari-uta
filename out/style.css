@@ -1,0 +1,177 @@
+:root {
+  --bg: #fbf9f4;
+  --fg: #23201b;
+  --muted: #6f675c;
+  --rule: #ded6c7;
+  --accent: #8c3b2e;
+  --grc: #3a4a5c;
+  --eng: #4a5240;
+  --card: #fffdf8;
+  --max: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17150f;
+    --fg: #e8e2d6;
+    --muted: #9a9184;
+    --rule: #37322a;
+    --accent: #d98570;
+    --grc: #9db4cc;
+    --eng: #a8b394;
+    --card: #1e1b14;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+}
+
+header, main, footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+header { padding-top: 3rem; }
+
+h1 {
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  letter-spacing: 0.16em;
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+
+.sub { color: var(--muted); margin: 0 0 2rem; font-size: 0.98rem; }
+
+h2 {
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  border-left: 3px solid var(--accent);
+  padding-left: 0.7rem;
+  margin: 2.6rem 0 1rem;
+  font-weight: 600;
+}
+
+/* ---- 目次 ---- */
+.facts table { border-collapse: collapse; width: 100%; margin: 0.8rem 0; }
+.facts th, .facts td {
+  text-align: left;
+  padding: 0.42rem 0.7rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.94rem;
+}
+.facts th { color: var(--muted); font-weight: 500; width: 42%; }
+.note {
+  font-size: 0.88rem;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  line-height: 1.8;
+}
+
+ol.books { list-style: none; padding: 0; margin: 0; }
+ol.books li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  padding: 0.55rem 0.2rem;
+  border-bottom: 1px solid var(--rule);
+  flex-wrap: wrap;
+}
+ol.books a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--accent); }
+ol.books a:hover { color: var(--accent); }
+ol.books .cnt { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+.ok, .todo, .gap {
+  font-size: 0.74rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.ok { background: var(--accent); color: var(--bg); }
+.todo { border: 1px solid var(--rule); color: var(--muted); }
+.gap { border: 1px dashed var(--rule); color: var(--muted); }
+li.not a { color: var(--muted); border-bottom-color: var(--rule); }
+
+/* ---- リーダー ---- */
+header.reader { padding-top: 2rem; }
+.home { margin: 0 0 0.8rem; font-size: 0.86rem; }
+.home a { color: var(--muted); text-decoration: none; }
+.home a:hover { color: var(--accent); }
+
+nav.views { display: flex; gap: 1.1rem; flex-wrap: wrap; margin: 0.6rem 0 0.4rem; }
+nav.views label { font-size: 0.86rem; color: var(--muted); cursor: pointer; }
+.status { font-size: 0.82rem; color: var(--muted); margin: 0.3rem 0 1.4rem; }
+
+.text { padding-bottom: 3rem; }
+
+.ln {
+  display: grid;
+  grid-template-columns: 3.4rem 1fr;
+  gap: 0.9rem;
+  padding: 0.18rem 0;
+  align-items: baseline;
+}
+.ln:target { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.num {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  text-align: right;
+  padding-top: 0.35rem;
+  user-select: none;
+}
+.num a { color: inherit; text-decoration: none; }
+.body > p { margin: 0 0 0.15rem; }
+.t-ja { }
+.t-grc { color: var(--grc); font-family: "Gentium Plus", "Palatino Linotype", Georgia, serif; font-size: 0.95rem; }
+.t-eng { color: var(--eng); font-family: Georgia, "Times New Roman", serif; font-size: 0.9rem; font-style: italic; }
+
+.gapnote {
+  margin: 0.7rem 0 0.7rem 4.3rem;
+  padding: 0.4rem 0.8rem;
+  border-left: 2px dashed var(--rule);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.empty {
+  border: 1px solid var(--rule);
+  background: var(--card);
+  border-radius: 4px;
+  padding: 1.2rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* ---- フッタ ---- */
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 3rem;
+  padding-top: 1.4rem;
+  padding-bottom: 3rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+footer a { color: var(--muted); }
+footer .warn {
+  border-left: 2px solid var(--accent);
+  padding-left: 0.8rem;
+}
+footer .meta { opacity: 0.75; }
+
+@media (max-width: 34rem) {
+  .ln { grid-template-columns: 2.6rem 1fr; gap: 0.6rem; }
+  .gapnote { margin-left: 3.2rem; }
+}

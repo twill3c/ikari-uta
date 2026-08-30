@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "key": "grc",
+      "urn": "urn:cts:greekLit:tlg0012.tlg001.perseus-grc2",
+      "role": "原文",
+      "note": "Homeri Opera, ed. D. B. Monro & T. W. Allen, Editio Tertia, Oxford: Clarendon Press",
+      "filename": "tlg0012.tlg001.perseus-grc2.xml",
+      "bytes": 2060459,
+      "sha256": "ebbdfdd7b6ebd52c4ecdfdb92c17cef4447ccbb5114f7fb00cd34f434dd8521b",
+      "cached": false,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Perseus Digital Library, Tufts University"
+    },
+    {
+      "key": "eng",
+      "urn": "urn:cts:greekLit:tlg0012.tlg001.perseus-eng3",
+      "role": "英訳(照合用)",
+      "note": "A. T. Murray, Loeb Classical Library, London: W. Heinemann, 1924",
+      "filename": "tlg0012.tlg001.perseus-eng3.xml",
+      "bytes": 1134377,
+      "sha256": "9a5bc69f21adabdbb599ee6b746856a8a6421da224381476dae83edbfc1ea260",
+      "cached": false,
+      "license": "CC BY-SA 4.0",
+      "attribution": "Perseus Digital Library, Tufts University"
+    }
+  ]
+}

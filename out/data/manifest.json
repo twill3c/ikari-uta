@@ -1,0 +1,189 @@
+{
+ "books": [
+  {
+   "book": 1,
+   "line_count": 611,
+   "line_max": 611,
+   "missing": [],
+   "translated": true
+  },
+  {
+   "book": 2,
+   "line_count": 877,
+   "line_max": 877,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 3,
+   "line_count": 461,
+   "line_max": 461,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 4,
+   "line_count": 544,
+   "line_max": 544,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 5,
+   "line_count": 909,
+   "line_max": 909,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 6,
+   "line_count": 529,
+   "line_max": 529,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 7,
+   "line_count": 482,
+   "line_max": 482,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 8,
+   "line_count": 565,
+   "line_max": 565,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 9,
+   "line_count": 709,
+   "line_max": 713,
+   "missing": [
+    458,
+    459,
+    460,
+    461
+   ],
+   "translated": false
+  },
+  {
+   "book": 10,
+   "line_count": 579,
+   "line_max": 579,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 11,
+   "line_count": 847,
+   "line_max": 848,
+   "missing": [
+    543
+   ],
+   "translated": false
+  },
+  {
+   "book": 12,
+   "line_count": 471,
+   "line_max": 471,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 13,
+   "line_count": 837,
+   "line_max": 837,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 14,
+   "line_count": 521,
+   "line_max": 522,
+   "missing": [
+    269
+   ],
+   "translated": false
+  },
+  {
+   "book": 15,
+   "line_count": 746,
+   "line_max": 746,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 16,
+   "line_count": 867,
+   "line_max": 867,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 17,
+   "line_count": 761,
+   "line_max": 761,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 18,
+   "line_count": 617,
+   "line_max": 617,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 19,
+   "line_count": 424,
+   "line_max": 424,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 20,
+   "line_count": 503,
+   "line_max": 503,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 21,
+   "line_count": 611,
+   "line_max": 611,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 22,
+   "line_count": 515,
+   "line_max": 515,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 23,
+   "line_count": 897,
+   "line_max": 897,
+   "missing": [],
+   "translated": false
+  },
+  {
+   "book": 24,
+   "line_count": 804,
+   "line_max": 804,
+   "missing": [],
+   "translated": false
+  }
+ ],
+ "extant_lines": 15687,
+ "sum_of_maxima": 15693,
+ "source": {
+  "urn": "urn:cts:greekLit:tlg0012.tlg001.perseus-grc2",
+  "edition": "Monro & Allen, Editio Tertia (Oxford)",
+  "license": "CC BY-SA 4.0",
+  "attribution": "Perseus Digital Library, Tufts University"
+ }
+}

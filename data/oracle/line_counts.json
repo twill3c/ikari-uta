@@ -1,0 +1,163 @@
+{
+ "measured_on": "2026-08-31",
+ "source": "tlg0012.tlg001.perseus-grc2.xml",
+ "path": "B (linear byte scan)",
+ "books": 24,
+ "extant_lines": 15687,
+ "sum_of_maxima": 15693,
+ "per_book": [
+  {
+   "book": 1,
+   "count": 611,
+   "max": 611,
+   "missing": []
+  },
+  {
+   "book": 2,
+   "count": 877,
+   "max": 877,
+   "missing": []
+  },
+  {
+   "book": 3,
+   "count": 461,
+   "max": 461,
+   "missing": []
+  },
+  {
+   "book": 4,
+   "count": 544,
+   "max": 544,
+   "missing": []
+  },
+  {
+   "book": 5,
+   "count": 909,
+   "max": 909,
+   "missing": []
+  },
+  {
+   "book": 6,
+   "count": 529,
+   "max": 529,
+   "missing": []
+  },
+  {
+   "book": 7,
+   "count": 482,
+   "max": 482,
+   "missing": []
+  },
+  {
+   "book": 8,
+   "count": 565,
+   "max": 565,
+   "missing": []
+  },
+  {
+   "book": 9,
+   "count": 709,
+   "max": 713,
+   "missing": [
+    458,
+    459,
+    460,
+    461
+   ]
+  },
+  {
+   "book": 10,
+   "count": 579,
+   "max": 579,
+   "missing": []
+  },
+  {
+   "book": 11,
+   "count": 847,
+   "max": 848,
+   "missing": [
+    543
+   ]
+  },
+  {
+   "book": 12,
+   "count": 471,
+   "max": 471,
+   "missing": []
+  },
+  {
+   "book": 13,
+   "count": 837,
+   "max": 837,
+   "missing": []
+  },
+  {
+   "book": 14,
+   "count": 521,
+   "max": 522,
+   "missing": [
+    269
+   ]
+  },
+  {
+   "book": 15,
+   "count": 746,
+   "max": 746,
+   "missing": []
+  },
+  {
+   "book": 16,
+   "count": 867,
+   "max": 867,
+   "missing": []
+  },
+  {
+   "book": 17,
+   "count": 761,
+   "max": 761,
+   "missing": []
+  },
+  {
+   "book": 18,
+   "count": 617,
+   "max": 617,
+   "missing": []
+  },
+  {
+   "book": 19,
+   "count": 424,
+   "max": 424,
+   "missing": []
+  },
+  {
+   "book": 20,
+   "count": 503,
+   "max": 503,
+   "missing": []
+  },
+  {
+   "book": 21,
+   "count": 611,
+   "max": 611,
+   "missing": []
+  },
+  {
+   "book": 22,
+   "count": 515,
+   "max": 515,
+   "missing": []
+  },
+  {
+   "book": 23,
+   "count": 897,
+   "max": 897,
+   "missing": []
+  },
+  {
+   "book": 24,
+   "count": 804,
+   "max": 804,
+   "missing": []
+  }
+ ]
+}
