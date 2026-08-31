@@ -15,7 +15,9 @@
   "グエース",
   "タラントン",
   "カタイテュクス",
-  "プラムネイオス"
+  "プラムネイオス",
+  "カルキス",
+  "キュミンディス"
  ],
  "entries": [
   {
@@ -3766,6 +3768,283 @@
    "camp": "trojan",
    "added_in": "loop_014",
    "note": "モリュスの父"
+  },
+  {
+   "grc": "Πορθεύς",
+   "eng": "Portheus",
+   "ja": "ポルテウス",
+   "kind": "hero",
+   "note": "オイネウスらの父。ディオメーデースの曾祖父",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἄγριος",
+   "eng": "Agrius",
+   "ja": "アグリオス",
+   "kind": "hero",
+   "note": "ポルテウスの子",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Μέλας",
+   "eng": "Melas",
+   "ja": "メラース",
+   "kind": "hero",
+   "note": "ポルテウスの子",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Τηθύς",
+   "eng": "Tethys",
+   "ja": "テーテュース",
+   "kind": "god",
+   "added_in": "loop_015",
+   "note": "オーケアノスの妻。神々の母"
+  },
+  {
+   "grc": "Ῥεία",
+   "eng": "Rhea",
+   "ja": "レイアー",
+   "kind": "god",
+   "added_in": "loop_015",
+   "note": "クロノスの妻。ヘーラーの母"
+  },
+  {
+   "grc": "Πιερίη",
+   "eng": "Pieria",
+   "ja": "ピエリエー",
+   "kind": "place",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἠμαθίη",
+   "eng": "Emathia",
+   "ja": "エーマティエー",
+   "kind": "place",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἄθως",
+   "eng": "Athos",
+   "ja": "アトース",
+   "kind": "place",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ὕπνος",
+   "eng": "Sleep",
+   "ja": "ヒュプノス",
+   "kind": "god",
+   "added_in": "loop_015",
+   "note": "眠りの神。死の兄弟"
+  },
+  {
+   "grc": "Θάνατος",
+   "eng": "Death",
+   "ja": "タナトス",
+   "kind": "god",
+   "added_in": "loop_015",
+   "note": "死の神。ヒュプノスの兄弟"
+  },
+  {
+   "grc": "Νύξ",
+   "eng": "Night",
+   "ja": "ニュクス",
+   "kind": "god",
+   "added_in": "loop_015",
+   "note": "夜の女神。神と人とを従える"
+  },
+  {
+   "grc": "Πασιθέη",
+   "eng": "Pasithea",
+   "ja": "パシテエー",
+   "kind": "god",
+   "note": "カリスの一人。ヒュプノスが慕う",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Τιτῆνες",
+   "eng": "Titans",
+   "ja": "ティーテーネス",
+   "kind": "god",
+   "note": "タルタロスの下、クロノスのまわりの神々",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Λεκτόν",
+   "eng": "Lectum",
+   "ja": "レクトン",
+   "kind": "place",
+   "note": "イーデーの岬",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἰξίων",
+   "eng": "Ixion",
+   "ja": "イクシオーン",
+   "kind": "hero",
+   "note": "ペイリトオスの母の夫",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Δανάη",
+   "eng": "Danae",
+   "ja": "ダナエー",
+   "kind": "hero",
+   "note": "アクリシオスの娘。ペルセウスの母",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἀκρίσιος",
+   "eng": "Acrisius",
+   "ja": "アクリシオス",
+   "kind": "hero",
+   "note": "ダナエーの父",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Περσεύς",
+   "eng": "Perseus",
+   "ja": "ペルセウス",
+   "kind": "hero",
+   "note": "ダナエーの子",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ῥαδάμανθυς",
+   "eng": "Rhadamanthys",
+   "ja": "ラダマンテュス",
+   "kind": "hero",
+   "note": "ポイニクスの娘の子。ミーノースの兄弟",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Σεμέλη",
+   "eng": "Semele",
+   "ja": "セメレー",
+   "kind": "hero",
+   "note": "ディオニューソスの母",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἀλκμήνη",
+   "eng": "Alcmene",
+   "ja": "アルクメーネー",
+   "kind": "hero",
+   "note": "ヘーラクレースの母",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Σάτνιος",
+   "eng": "Satnius",
+   "ja": "サトニオス",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "エーノプスの子",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἦνοψ",
+   "eng": "Enops",
+   "ja": "エーノプス",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "サトニオエイスの岸で牛を飼っていた",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἀρηΐλυκος",
+   "eng": "Areilycus",
+   "ja": "アレーイリュコス",
+   "kind": "hero",
+   "camp": "achaean",
+   "note": "プロトエーノールの父",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Πρόμαχος",
+   "eng": "Promachus",
+   "ja": "プロマコス",
+   "kind": "hero",
+   "camp": "achaean",
+   "added_in": "loop_015",
+   "note": "アレゲーノールの子。ボイオティアの人"
+  },
+  {
+   "grc": "Ἀλεγήνωρ",
+   "eng": "Alegenor",
+   "ja": "アレゲーノール",
+   "kind": "hero",
+   "camp": "achaean",
+   "added_in": "loop_015",
+   "note": "プロマコスの父"
+  },
+  {
+   "grc": "Ἰλιονεύς",
+   "eng": "Ilioneus",
+   "ja": "イーリオネウス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_015",
+   "note": "ポルバースの一人子"
+  },
+  {
+   "grc": "Ὕρτιος",
+   "eng": "Hyrtius",
+   "ja": "ヒュルティオス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_015",
+   "note": "ミュシア勢の導き手"
+  },
+  {
+   "grc": "Γύρτιος",
+   "eng": "Gyrtius",
+   "ja": "ギュルティオス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_015",
+   "note": "ヒュルティオスの父"
+  },
+  {
+   "grc": "Μέρμερος",
+   "eng": "Mermerus",
+   "ja": "メルメロス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Προθόων",
+   "eng": "Prothoon",
+   "ja": "プロトオーン",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Περιφήτης",
+   "eng": "Periphetes",
+   "ja": "ペリペーテース",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ὑπερήνωρ",
+   "eng": "Hyperenor",
+   "ja": "ヒュペレーノール",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_015"
+  },
+  {
+   "grc": "Ἠέλιος",
+   "eng": "Helios",
+   "ja": "ヘーリオス",
+   "kind": "god",
+   "note": "陽の神。普通名詞としての ἠέλιος は既訳で「陽」と訳し分けている(第7巻421行など)",
+   "added_in": "loop_015"
   }
  ]
 }
