@@ -185,9 +185,9 @@
    "line_count": 503,
    "line_max": 503,
    "missing": [],
-   "translated": false,
-   "complete": false,
-   "translated_lines": 0
+   "translated": true,
+   "complete": true,
+   "translated_lines": 503
   },
   {
    "book": 21,

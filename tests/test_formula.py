@@ -20,9 +20,18 @@ pytestmark = pytest.mark.validation
 # 既存の割れを直せば減る。減った場合もここを更新する(緩めすぎの見張りを残さないため)。
 MEASURED_DIVERGENCES = 263
 
+# **原文が代名詞しか持たないために、訳し分けが正しい行。**
+# 底本で同一の行でも、指す人物が文脈で変われば日本語では別の名を補うことになる。
+# これは揺れではないので、実測の例外として名指しで許す。
+# 増やすときは、必ず「原文のどこが代名詞か」を書き添えること。
+ALLOWED_CONTEXT_DIVERGENCE = {
+    # ὃ δὲ(彼は)だけで主語を書かない行。第5巻はテューデウスの子、第20巻はアイネイアース。
+    "σμερδαλέα ἰάχων· ὃ δὲ χερμάδιον λάβε χειρὶ",
+}
+
 
 def test_t032_formulaic_divergence_does_not_grow():
-    div = divergences()
+    div = [d for d in divergences() if d[0] not in ALLOWED_CONTEXT_DIVERGENCE]
     assert len(div) <= MEASURED_DIVERGENCES, (
         f"同一の原文行に異なる訳を当てた組が {len(div)} 組に増えた"
         f"(実測 {MEASURED_DIVERGENCES})。新しく持ち込んだ揺れがある。"
@@ -32,6 +41,16 @@ def test_t032_formulaic_divergence_does_not_grow():
         f"割れが {len(div)} 組まで減っている(実測 {MEASURED_DIVERGENCES})。"
         "直したのなら MEASURED_DIVERGENCES を更新すること —— 緩すぎる見張りを残さない"
     )
+
+
+def test_t032d_allowed_exceptions_still_diverge():
+    """例外に挙げた行が、実際に今も割れていること。
+
+    直った行を例外に残すと、見張りが緩んだまま気づけない(T-029a と同じ考え)。
+    """
+    actual = {g for g, _ in divergences()}
+    stale = ALLOWED_CONTEXT_DIVERGENCE - actual
+    assert not stale, f"例外に挙げた行が割れていない(緩めすぎの見張り): {sorted(stale)}"
 
 
 def test_t032b_oracle_is_not_empty():

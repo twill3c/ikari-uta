@@ -2233,7 +2233,7 @@
       "ja": "アレイトオス",
       "kind": "hero",
       "added_in": "loop_008",
-      "note": "棍棒使い。メネスティオスの父"
+      "note": "棍棒使い。メネスティオスの父 / **同名異人**。第20巻はアキレウスが討つトロイア方の別人"
     },
     {
       "grc": "Μενέσθιος",
@@ -4546,7 +4546,7 @@
       "kind": "hero",
       "camp": "trojan",
       "added_in": "loop_017",
-      "note": "オネートールの子。イーデーのゼウスの祭司"
+      "note": "オネートールの子。イーデーのゼウスの祭司 / **同名異人**。第20巻はアキレウスが討つトロイア方の別人"
     },
     {
       "grc": "Ὀνήτωρ",
@@ -5192,6 +5192,196 @@
       "kind": "god",
       "added_in": "loop_020",
       "note": "エリーニュスの複数形(第19巻259行)。単数は87行"
+    },
+    {
+      "grc": "Ὀτρυντεύς",
+      "eng": "Otrynteus",
+      "ja": "オトリュンテウス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "イピティオーンの父。都を落とす者"
+    },
+    {
+      "grc": "Καλλικολώνη",
+      "eng": "Callicolone",
+      "ja": "カリコローネー",
+      "kind": "place",
+      "added_in": "loop_021",
+      "note": "トロイア側の神々が陣取った丘"
+    },
+    {
+      "grc": "Ἐριχθόνιος",
+      "eng": "Erichthonius",
+      "ja": "エリクトニオス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "ダルダノスの子。トロース の父。三千頭の牝馬を飼った"
+    },
+    {
+      "grc": "Ἀσσάρακος",
+      "eng": "Assaracus",
+      "ja": "アッサラコス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "トロースの子。カピュスの父"
+    },
+    {
+      "grc": "Τρώς",
+      "eng": "Tros",
+      "ja": "トロース",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "エリクトニオスの子。イーロス・アッサラコス・ガニュメーデースの父。トロイアの名の由来"
+    },
+    {
+      "grc": "Κάπυς",
+      "eng": "Capys",
+      "ja": "カピュス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "アッサラコスの子。アンキーセースの父"
+    },
+    {
+      "grc": "Δαρδανίη",
+      "eng": "Dardania",
+      "ja": "ダルダニエー",
+      "kind": "place",
+      "added_in": "loop_021",
+      "note": "ダルダノスが築いた都。イーリオスより古い"
+    },
+    {
+      "grc": "Ἱπποδάμας",
+      "eng": "Hippodamas",
+      "ja": "ヒッポダマース",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "アキレウスに討たれる。第2巻のヒッポダメイアとは別語・別人"
+    },
+    {
+      "grc": "Πολύδωρος",
+      "eng": "Polydorus",
+      "ja": "ポリュドーロス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "プリアモスの末子。第16巻180行のポリュドーレー(ペーレウスの娘)とは別語・別人"
+    },
+    {
+      "grc": "Ἀϊδωνεύς",
+      "eng": "Aidoneus",
+      "ja": "アイドーネウス",
+      "kind": "god",
+      "added_in": "loop_021",
+      "note": "ハーデースの別名(第20巻61行)"
+    },
+    {
+      "grc": "Ἰφιτίων",
+      "eng": "Iphition",
+      "ja": "イピティオーン",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "オトリュンテウスの子。アキレウスが最初に討つ"
+    },
+    {
+      "grc": "Ὕδη",
+      "eng": "Hyde",
+      "ja": "ヒュデー",
+      "kind": "place",
+      "added_in": "loop_021",
+      "note": "トモーロスの麓の町"
+    },
+    {
+      "grc": "Ὕλλος",
+      "eng": "Hyllus",
+      "ja": "ヒュロス",
+      "kind": "place",
+      "added_in": "loop_021",
+      "note": "リューディエーの川"
+    },
+    {
+      "grc": "Ἕρμος",
+      "eng": "Hermus",
+      "ja": "ヘルモス",
+      "kind": "place",
+      "added_in": "loop_021",
+      "note": "リューディエーの川"
+    },
+    {
+      "grc": "Δημολέων",
+      "eng": "Demoleon",
+      "ja": "デーモレオーン",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "アンテーノールの子"
+    },
+    {
+      "grc": "Δρύοψ",
+      "eng": "Dryops",
+      "ja": "ドリュオプス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021"
+    },
+    {
+      "grc": "Δήμουχος",
+      "eng": "Demuchus",
+      "ja": "デームーコス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "ピレートールの子"
+    },
+    {
+      "grc": "Φιλητορίδης",
+      "eng": "son of Philetor",
+      "ja": "ピレートールの子",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "デームーコスの父称。ピレートール自身は原文に単独では現れない"
+    },
+    {
+      "grc": "Ῥίγμος",
+      "eng": "Rhigmus",
+      "ja": "リーグモス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "トレーケーの人。ペイローオスの子"
+    },
+    {
+      "grc": "Λυκάων",
+      "eng": "Lycaon",
+      "ja": "リュカーオーン",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "プリアモスの子。第21巻でアキレウスに討たれる。第3巻のパンダロスの父リュカーオーンとは別人だが原文の綴りは同一"
+    },
+    {
+      "grc": "Ἑλικώνιος",
+      "eng": "Heliconian",
+      "ja": "ヘリコーニオス",
+      "kind": "god",
+      "added_in": "loop_021",
+      "note": "ポセイダーオーンの称号(第20巻404行)。ヘリケーの主の意"
+    },
+    {
+      "grc": "Ἀλαστορίδης",
+      "eng": "son of Alastor",
+      "ja": "アラストールの子",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_021",
+      "note": "トロースの父称。第20巻463行"
     }
   ]
 }
