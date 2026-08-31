@@ -5592,6 +5592,93 @@
       "kind": "place",
       "added_in": "loop_024",
       "note": "**ボイオーティアのテーバイ**。既登録の Θήβη(テーベー)はアンドロマケーの故郷で、ミューシアの別の都。原語も単数・複数で異なる"
+    },
+    {
+      "grc": "Νιόβη",
+      "eng": "Niobe",
+      "ja": "ニオベー",
+      "kind": "hero",
+      "note": "十二人の子を失い、石になっても嘆き続ける女。アキレウスがプリアモスに語る喩え",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Σίπυλος",
+      "eng": "Sipylus",
+      "ja": "シピュロス",
+      "kind": "place",
+      "note": "ニオベーが石となった山",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Μάκαρ",
+      "eng": "Macar",
+      "ja": "マカル",
+      "kind": "hero",
+      "note": "レスボスを治めた者",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Πολύκτωρ",
+      "eng": "Polyctor",
+      "ja": "ポリュクトール",
+      "kind": "hero",
+      "camp": "trojan",
+      "note": "ヘルメースが名乗る偽りの父の名",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Πάμμων",
+      "eng": "Pammon",
+      "ja": "パンモーン",
+      "kind": "hero",
+      "camp": "trojan",
+      "note": "プリアモスの子",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Ἀγάθων",
+      "eng": "Agathon",
+      "ja": "アガトーン",
+      "kind": "hero",
+      "camp": "trojan",
+      "note": "プリアモスの子",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Ἀντίφονος",
+      "eng": "Antiphonus",
+      "ja": "アンティポノス",
+      "kind": "hero",
+      "camp": "trojan",
+      "note": "プリアモスの子",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Μήστωρ",
+      "eng": "Mestor",
+      "ja": "メーストール",
+      "kind": "hero",
+      "camp": "trojan",
+      "note": "プリアモスの子。すでに死んでいる",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Τρωΐλος",
+      "eng": "Troilus",
+      "ja": "トローイロス",
+      "kind": "hero",
+      "camp": "trojan",
+      "note": "プリアモスの子。馬を好んだ。すでに死んでいる",
+      "added_in": "loop_025"
+    },
+    {
+      "grc": "Ἀγαυός",
+      "eng": "Agauos",
+      "ja": "アガウオス",
+      "kind": "hero",
+      "camp": "trojan",
+      "note": "プリアモスの子",
+      "added_in": "loop_025"
     }
   ]
 }

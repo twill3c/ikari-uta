@@ -95,7 +95,17 @@ def test_t023_attribution_on_every_page():
 
 
 def test_t024_untranslated_books_marked():
-    """T-024 / F-08: 未訳の巻が「準備中」と明示される。"""
+    """T-024 / F-08: 未訳の巻が「準備中」と明示され、**訳し終えたらその表示が消える**。
+
+    もとは「未訳の巻が存在すること」を前提に置いていた。だがそれは
+    **仕事が進めば消える前提**であり、全 24 巻を訳し終えた loop_025 で
+    「未訳の巻が無い」と言って落ちた —— 完成をアプリの故障として報告したのである。
+    前提を借りた検査は、借りた前提が尽きた日に嘘をつく(HC-102)。
+
+    そこで両方の局面を見る形に変えた。未訳が残る間は「準備中」があること、
+    残っていなければ無いこと。どちらの側も検査されるので、
+    片方だけを見ていたときのように、静かに意味を失うことがない。
+    """
     index = OUT_DIR / "index.html"
     if not index.exists():
         pytest.skip("index.html が未生成")
@@ -104,8 +114,14 @@ def test_t024_untranslated_books_marked():
     translated = [b for b in manifest["books"] if b["translated"]]
     untranslated = [b for b in manifest["books"] if not b["translated"]]
     assert translated, "訳済みの巻が 1 つも無い"
-    assert untranslated, "未訳の巻が無い。この検査は loop_001 時点で意味を持つべきである"
-    assert "準備中" in body, "未訳を示す表示が index に無い"
+    if untranslated:
+        assert "準備中" in body, (
+            f"未訳の巻が {len(untranslated)} 巻あるのに、準備中の表示が index に無い"
+        )
+    else:
+        assert "準備中" not in body, (
+            "全 24 巻を訳し終えているのに、index に「準備中」が残っている"
+        )
 
 
 def test_t025_per_book_json_split():

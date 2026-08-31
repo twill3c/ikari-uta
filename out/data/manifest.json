@@ -221,9 +221,9 @@
    "line_count": 804,
    "line_max": 804,
    "missing": [],
-   "translated": false,
-   "complete": false,
-   "translated_lines": 0
+   "translated": true,
+   "complete": true,
+   "translated_lines": 804
   }
  ],
  "extant_lines": 15687,
