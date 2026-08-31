@@ -2493,7 +2493,8 @@
    "ja": "メラニッポス",
    "kind": "hero",
    "camp": "trojan",
-   "added_in": "loop_009"
+   "added_in": "loop_009",
+   "note": "**同名異人**。第15巻547行はヒケターオーンの子(第8巻はテウクロスが討つ別人)"
   },
   {
    "grc": "Γοργυθίων",
@@ -3102,7 +3103,7 @@
    "kind": "hero",
    "added_in": "loop_012",
    "camp": "achaean",
-   "note": "クリュティオスの子"
+   "note": "クリュティオスの子 / **同名異人**。第15巻525行はラムポスの子(トロイア方)"
   },
   {
    "grc": "Αἴσυμνος",
@@ -3652,7 +3653,7 @@
    "ja": "カレートール",
    "kind": "hero",
    "camp": "achaean",
-   "note": "アパレウスの父",
+   "note": "アパレウスの父 / **同名異人**。第15巻419行はクリュティオスの子(トロイア方)",
    "added_in": "loop_014"
   },
   {
@@ -4028,7 +4029,8 @@
    "ja": "ペリペーテース",
    "kind": "hero",
    "camp": "trojan",
-   "added_in": "loop_015"
+   "added_in": "loop_015",
+   "note": "**同名異人**。第15巻638行はミュケーナイのペリペーテース、コプレウスの子(アカイア方)"
   },
   {
    "grc": "Ὑπερήνωρ",
@@ -4045,6 +4047,151 @@
    "kind": "god",
    "note": "陽の神。普通名詞としての ἠέλιος は既訳で「陽」と訳し分けている(第7巻421行など)",
    "added_in": "loop_015"
+  },
+  {
+   "grc": "Γαῖα",
+   "eng": "Gaia",
+   "ja": "ガイア",
+   "kind": "god",
+   "note": "大地。誓いの証人",
+   "added_in": "loop_016"
+  },
+  {
+   "grc": "Οὐρανός",
+   "eng": "Uranus",
+   "ja": "ウーラノス",
+   "kind": "god",
+   "note": "天。誓いの証人",
+   "added_in": "loop_016"
+  },
+  {
+   "grc": "Θέμις",
+   "eng": "Themis",
+   "ja": "テミス",
+   "kind": "god",
+   "note": "神々の宴を司る女神",
+   "added_in": "loop_016"
+  },
+  {
+   "grc": "Ἴασος",
+   "eng": "Iasus",
+   "ja": "イアソス",
+   "kind": "hero",
+   "camp": "achaean",
+   "added_in": "loop_016",
+   "note": "アテーナイ勢の将。スペーロスの子"
+  },
+  {
+   "grc": "Σφῆλος",
+   "eng": "Sphelus",
+   "ja": "スペーロス",
+   "kind": "hero",
+   "camp": "achaean",
+   "added_in": "loop_016",
+   "note": "イアソスの父"
+  },
+  {
+   "grc": "Βουκόλος",
+   "eng": "Bucolus",
+   "ja": "ブーコロス",
+   "kind": "hero",
+   "camp": "achaean",
+   "added_in": "loop_016",
+   "note": "スペーロスの父。第6巻のブーコリオーンとは別"
+  },
+  {
+   "grc": "Δηΐοχος",
+   "eng": "Deiochus",
+   "ja": "デーイオコス",
+   "kind": "hero",
+   "camp": "achaean",
+   "added_in": "loop_016"
+  },
+  {
+   "grc": "Λυκόφρων",
+   "eng": "Lycophron",
+   "ja": "リュコプローン",
+   "kind": "hero",
+   "note": "マストールの子。アイアースの従者",
+   "added_in": "loop_016",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Μάστωρ",
+   "eng": "Mastor",
+   "ja": "マストール",
+   "kind": "hero",
+   "note": "リュコプローンの父",
+   "added_in": "loop_016"
+  },
+  {
+   "grc": "Κλεῖτος",
+   "eng": "Cleitus",
+   "ja": "クレイトス",
+   "kind": "hero",
+   "note": "ペイセーノールの子",
+   "added_in": "loop_016",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Πεισήνωρ",
+   "eng": "Peisenor",
+   "ja": "ペイセーノール",
+   "kind": "hero",
+   "note": "クレイトスの父",
+   "added_in": "loop_016",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Προτιάων",
+   "eng": "Protiaon",
+   "ja": "プロティアーオーン",
+   "kind": "hero",
+   "added_in": "loop_016",
+   "camp": "trojan",
+   "note": "アステュノオスの父"
+  },
+  {
+   "grc": "Περιμήδης",
+   "eng": "Perimedes",
+   "ja": "ペリメーデース",
+   "kind": "hero",
+   "added_in": "loop_016",
+   "camp": "achaean",
+   "note": "スケディオスの父"
+  },
+  {
+   "grc": "Λαοδάμας",
+   "eng": "Laodamas",
+   "ja": "ラーオダマース",
+   "kind": "hero",
+   "added_in": "loop_016",
+   "camp": "trojan",
+   "note": "アンテーノールの子。歩兵の導き手"
+  },
+  {
+   "grc": "Κροῖσμος",
+   "eng": "Croesmus",
+   "ja": "クロイスモス",
+   "kind": "hero",
+   "added_in": "loop_016",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Εὐφήτης",
+   "eng": "Euphetes",
+   "ja": "エウペーテース",
+   "kind": "hero",
+   "added_in": "loop_016",
+   "note": "エピュレーの主。ピューレウスに胸当てを贈った"
+  },
+  {
+   "grc": "Κοπρεύς",
+   "eng": "Copreus",
+   "ja": "コプレウス",
+   "kind": "hero",
+   "note": "ペリペーテースの父。エウリュステウスの使い",
+   "added_in": "loop_016"
   }
  ]
 }

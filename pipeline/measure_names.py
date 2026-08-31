@@ -78,8 +78,48 @@ def lookup(fragment: str) -> None:
                 print(f"  {e['grc']} → {e['ja']}  (eng={e['eng']})")
 
 
+KATAKANA = re.compile(r"[ァ-ヺー]{2,}")
+
+
+def check(tsv: str) -> int:
+    """訳した直後の TSV を、その場で対訳表に照らす。
+
+    T-015 と同じことを、巻を訳し終える前に一区切りごとに行うための入口。
+    loop_014 と loop_016 で**同じ語(プローテシラーオス / 正: プロテシラーオス)を
+    同じように誤った**。長音の有無のような差は記憶では防げないので、
+    書いた直後に機械が言う経路を置く。凍結表記が正 —— 訳文の側を直す。
+    """
+    known: set[str] = set()
+    for name in ("glossary.json", "glossary.catalogue.json"):
+        path = ROOT / "data" / name
+        if not path.exists():
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        known.update(e["ja"] for e in data["entries"])
+        known.update(data.get("allow_katakana", []))
+
+    offenders = []
+    for i, line in enumerate(pathlib.Path(tsv).read_text(encoding="utf-8").splitlines(), 1):
+        if "\t" not in line:
+            continue
+        n, ja = line.split("\t", 1)
+        for term in KATAKANA.findall(ja):
+            if not any(term in k or k in term for k in known):
+                offenders.append((n, term))
+
+    if not offenders:
+        print(f"OK: {tsv} に表外のカタカナは無い")
+        return 0
+    print(f"表外のカタカナ {len(offenders)} 件 —— 原語で引き直すこと:")
+    for n, term in offenders:
+        print(f"  行 {n}: {term}")
+    return 1
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "--grc":
         lookup(sys.argv[2])
         raise SystemExit(0)
+    if len(sys.argv) > 2 and sys.argv[1] == "--check":
+        raise SystemExit(check(sys.argv[2]))
     raise SystemExit(main(int(sys.argv[1])))
