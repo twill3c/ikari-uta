@@ -265,7 +265,8 @@
       "eng": "Eetion",
       "ja": "エーエティオーン",
       "kind": "hero",
-      "camp": "trojan"
+      "camp": "trojan",
+      "note": "**同名異人**。第17巻575行のポデースの父は、アンドロマケーの父とは別人"
     },
     {
       "grc": "Χρύσης",
@@ -1081,7 +1082,7 @@
       "kind": "hero",
       "added_in": "loop_005",
       "camp": "achaean",
-      "note": "ネストール配下"
+      "note": "ネストール配下 / **同名異人**。第17巻467行はラエルケースの父(アルキメドーンの祖父)"
     },
     {
       "grc": "Βίας",
@@ -1172,7 +1173,7 @@
       "kind": "hero",
       "added_in": "loop_005",
       "camp": "trojan",
-      "note": "アンテーノールの子"
+      "note": "アンテーノールの子 / **同名異人**。第17巻699行はアンティロコスの僚友で御者(アカイア方)"
     },
     {
       "grc": "Πτολεμαῖος",
@@ -1394,7 +1395,7 @@
       "ja": "ペリパース",
       "kind": "hero",
       "added_in": "loop_006",
-      "note": "**同名異人**。アイトーリアの将と、アレースの従者"
+      "note": "**同名異人**。アイトーリアの将と、アレースの従者 / **同名異人**。第17巻323行はエーピュトスの子、アンキーセースの家の老いた伝令"
     },
     {
       "grc": "Τρώς",
@@ -1460,7 +1461,8 @@
       "ja": "コイラノス",
       "kind": "hero",
       "added_in": "loop_006",
-      "camp": "achaean"
+      "camp": "achaean",
+      "note": "**同名異人**。第17巻611行はリュクトス出身、メーリオネースの従者で御者"
     },
     {
       "grc": "Δολοπίων",
@@ -3264,7 +3266,7 @@
       "ja": "アピサーオーン",
       "kind": "hero",
       "camp": "trojan",
-      "note": "民の牧者。エウリュピュロスに討たれる",
+      "note": "民の牧者。エウリュピュロスに討たれる / **同名異人**。第17巻348行はヒッパソスの子、パイオニエーから来た者",
       "added_in": "loop_012"
     },
     {
@@ -4631,6 +4633,130 @@
       "camp": "trojan",
       "added_in": "loop_017",
       "note": "パントオスの子。パトロクロスを最初に突いた男。プーリュダマースの兄弟"
+    },
+    {
+      "grc": "Ὑπερήνωρ",
+      "eng": "Hyperenor",
+      "ja": "ヒュペレーノール",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "パントオスの子。エウポルボスの兄弟で、第14巻516行でメネラーオスに討たれた"
+    },
+    {
+      "grc": "Φρόντις",
+      "eng": "Phrontis",
+      "ja": "プロンティス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "パントオスの妻。エウポルボスの母"
+    },
+    {
+      "grc": "Μέντης",
+      "eng": "Mentes",
+      "ja": "メンテース",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "キコネス勢の将。アポローンがこの姿を借りてヘクトールを唆す"
+    },
+    {
+      "grc": "Θερσίλοχος",
+      "eng": "Thersilochus",
+      "ja": "テルシロコス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "助勢の将の一人"
+    },
+    {
+      "grc": "Δεισήνωρ",
+      "eng": "Deisenor",
+      "ja": "デイセーノール",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "助勢の将の一人"
+    },
+    {
+      "grc": "Λῆθος",
+      "eng": "Lethus",
+      "ja": "レートス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "ペラスゴイの人。ヒッポトオスの父"
+    },
+    {
+      "grc": "Ἠπυτος",
+      "eng": "Epytos",
+      "ja": "エーピュトス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "伝令ペリパースの父"
+    },
+    {
+      "grc": "Λειώκριτος",
+      "eng": "Leocritus",
+      "ja": "レイオークリトス",
+      "kind": "hero",
+      "camp": "achaean",
+      "added_in": "loop_018",
+      "note": "アリスバースの子。リュコメーデースの僚友"
+    },
+    {
+      "grc": "Ἀρίσβας",
+      "eng": "Arisbas",
+      "ja": "アリスバース",
+      "kind": "hero",
+      "camp": "achaean",
+      "added_in": "loop_018",
+      "note": "レイオークリトスの父"
+    },
+    {
+      "grc": "Παιονίη",
+      "eng": "Paeonia",
+      "ja": "パイオニエー",
+      "kind": "place",
+      "added_in": "loop_018",
+      "note": "パイオネス勢の地"
+    },
+    {
+      "grc": "Ἄρητος",
+      "eng": "Aretus",
+      "ja": "アレートス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "アウトメドーンに討たれる"
+    },
+    {
+      "grc": "Ποδῆς",
+      "eng": "Podes",
+      "ja": "ポデース",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_018",
+      "note": "エーエティオーンの子。ヘクトールの親しい会食の友"
+    },
+    {
+      "grc": "Ἄβυδος",
+      "eng": "Abydos",
+      "ja": "アビュドス",
+      "kind": "place",
+      "added_in": "loop_018",
+      "note": "ヘレースポントスの町"
+    },
+    {
+      "grc": "Ἀλεκτρύων",
+      "eng": "Alectryon",
+      "ja": "アレクトリュオーン",
+      "kind": "hero",
+      "camp": "achaean",
+      "added_in": "loop_018",
+      "note": "レーイトスの父"
     }
   ]
 }
