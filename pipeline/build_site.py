@@ -72,6 +72,9 @@ def write_book_json(entry: dict, out_data: Path) -> dict:
         "line_max": canon["line_max"],
         "missing": canon["missing"],
         "translated": ja is not None,
+        "complete": bool(ja and ja.get("complete")),
+        "translated_lines": len(ja_map),
+        "untranslated_from": ja.get("untranslated_from") if ja else None,
         "lines": lines,
         "english": eng["segments"] if eng else [],
     }
@@ -84,6 +87,8 @@ def write_book_json(entry: dict, out_data: Path) -> dict:
         "line_max": canon["line_max"],
         "missing": canon["missing"],
         "translated": ja is not None,
+        "complete": bool(ja and ja.get("complete")),
+        "translated_lines": len(ja_map),
     }
 
 
@@ -91,11 +96,16 @@ def render_index(manifest: dict) -> str:
     rows = []
     for b in manifest["books"]:
         n = b["book"]
-        state = (
-            '<span class="ok">訳あり</span>'
-            if b["translated"]
-            else '<span class="todo">準備中</span>'
-        )
+        if not b["translated"]:
+            state = '<span class="todo">準備中</span>'
+        elif b["complete"]:
+            state = '<span class="ok">全訳</span>'
+        else:
+            pct = round(100 * b["translated_lines"] / b["line_count"])
+            state = (
+                f'<span class="part">部分訳 {b["translated_lines"]:,}/{b["line_count"]:,} 行'
+                f"({pct}%)</span>"
+            )
         gap = (
             f'<span class="gap" title="底本の欠番">欠 {", ".join(map(str, b["missing"]))}</span>'
             if b["missing"]
@@ -113,7 +123,7 @@ def render_index(manifest: dict) -> str:
 
     total = manifest["extant_lines"]
     maxsum = manifest["sum_of_maxima"]
-    done = sum(b["line_count"] for b in manifest["books"] if b["translated"])
+    done = sum(b["translated_lines"] for b in manifest["books"])
 
     return f"""<!DOCTYPE html>
 <html lang="ja">
@@ -215,7 +225,7 @@ def build() -> dict:
 
 def main() -> int:
     m = build()
-    done = sum(b["line_count"] for b in m["books"] if b["translated"])
+    done = sum(b["translated_lines"] for b in m["books"])
     print(f"巻 {len(m['books'])} / 実在行 {m['extant_lines']:,} / 訳済み {done:,} 行")
     print(f"→ {OUT_DIR}")
     return 0

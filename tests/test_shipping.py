@@ -120,3 +120,32 @@ def test_t025_per_book_json_split():
     # 全巻を 1 枚に束ねたファイルが紛れていないこと
     big = [p for p in data_dir.glob("*.json") if p.stat().st_size > 3_000_000]
     assert not big, f"巨大な一括ファイル: {[p.name for p in big]}"
+
+
+def test_t032_progress_figure_matches_data():
+    """T-032: 目次が表示する訳済み行数が、実データの訳済み行数と一致する。
+
+    「訳済みの巻の原文行数」を足すと、部分訳の巻で進捗を過大に見せる。
+    数が正しくても図が嘘をつく型の欠陥なので、表示側を実データに突き合わせる。
+    """
+    index = OUT_DIR / "index.html"
+    manifest_path = OUT_DIR / "data" / "manifest.json"
+    if not index.exists() or not manifest_path.exists():
+        pytest.skip("出荷物が未生成")
+
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    expected = sum(b["translated_lines"] for b in manifest["books"])
+
+    # 巻別 JSON から独立に数え直す(manifest を鵜呑みにしない)
+    counted = 0
+    for b in manifest["books"]:
+        payload = json.loads(
+            (OUT_DIR / "data" / f"book-{b['book']:02d}.json").read_text(encoding="utf-8")
+        )
+        counted += sum(1 for ln in payload["lines"] if "ja" in ln)
+    assert counted == expected, f"manifest の訳済み {expected} が実データ {counted} と食い違う"
+
+    body = index.read_text(encoding="utf-8")
+    assert f"{expected:,} 行 /" in body, (
+        f"目次に訳済み {expected:,} 行が出ていない。過大表示の疑い"
+    )

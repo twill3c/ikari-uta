@@ -5,56 +5,72 @@
    "line_count": 611,
    "line_max": 611,
    "missing": [],
-   "translated": true
+   "translated": true,
+   "complete": true,
+   "translated_lines": 611
   },
   {
    "book": 2,
    "line_count": 877,
    "line_max": 877,
    "missing": [],
-   "translated": false
+   "translated": true,
+   "complete": false,
+   "translated_lines": 483
   },
   {
    "book": 3,
    "line_count": 461,
    "line_max": 461,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 4,
    "line_count": 544,
    "line_max": 544,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 5,
    "line_count": 909,
    "line_max": 909,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 6,
    "line_count": 529,
    "line_max": 529,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 7,
    "line_count": 482,
    "line_max": 482,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 8,
    "line_count": 565,
    "line_max": 565,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 9,
@@ -66,14 +82,18 @@
     460,
     461
    ],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 10,
    "line_count": 579,
    "line_max": 579,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 11,
@@ -82,21 +102,27 @@
    "missing": [
     543
    ],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 12,
    "line_count": 471,
    "line_max": 471,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 13,
    "line_count": 837,
    "line_max": 837,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 14,
@@ -105,77 +131,99 @@
    "missing": [
     269
    ],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 15,
    "line_count": 746,
    "line_max": 746,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 16,
    "line_count": 867,
    "line_max": 867,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 17,
    "line_count": 761,
    "line_max": 761,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 18,
    "line_count": 617,
    "line_max": 617,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 19,
    "line_count": 424,
    "line_max": 424,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 20,
    "line_count": 503,
    "line_max": 503,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 21,
    "line_count": 611,
    "line_max": 611,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 22,
    "line_count": 515,
    "line_max": 515,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 23,
    "line_count": 897,
    "line_max": 897,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   },
   {
    "book": 24,
    "line_count": 804,
    "line_max": 804,
    "missing": [],
-   "translated": false
+   "translated": false,
+   "complete": false,
+   "translated_lines": 0
   }
  ],
  "extant_lines": 15687,

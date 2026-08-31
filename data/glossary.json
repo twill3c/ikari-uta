@@ -81,6 +81,29 @@
     {"grc": "Ἄργος", "eng": "Argos", "ja": "アルゴス", "kind": "place"},
     {"grc": "Ἀχαιΐς", "eng": "Achaea", "ja": "アカイア", "kind": "place"},
     {"grc": "Θήβη", "eng": "Thebe", "ja": "テーベー", "kind": "place"},
-    {"grc": "Λῆμνος", "eng": "Lemnos", "ja": "レームノス", "kind": "place"}
+    {"grc": "Λῆμνος", "eng": "Lemnos", "ja": "レームノス", "kind": "place"},
+
+    {"grc": "Ἄρης", "eng": "Ares", "ja": "アレース", "kind": "god", "added_in": "loop_002"},
+    {"grc": "Ἑρμείας", "eng": "Hermes", "ja": "ヘルメース", "kind": "god", "added_in": "loop_002"},
+    {"grc": "Ἀργεϊφόντης", "eng": "Argeiphontes", "ja": "アルゲイポンテース", "kind": "god", "added_in": "loop_002",
+     "note": "ヘルメースの添え名。慣例訳「アルゴス殺し」は採らない —— この Ἄργος(百眼の怪物)は都市の Ἄργος と別物であり、同じカタカナに潰すと別の指示対象が一語に重なる。語義自体にも定説がない"},
+    {"grc": "Ζέφυρος", "eng": "Zephyrus", "ja": "ゼピュロス", "kind": "god", "note": "西風", "added_in": "loop_002"},
+
+    {"grc": "Νηλεύς", "eng": "Neleus", "ja": "ネーレウス", "kind": "hero", "note": "ネストールの父", "added_in": "loop_002"},
+    {"grc": "Πέλοψ", "eng": "Pelops", "ja": "ペロプス", "kind": "hero", "note": "杖の由来の系譜", "added_in": "loop_002"},
+    {"grc": "Θυέστης", "eng": "Thyestes", "ja": "テュエステース", "kind": "hero", "note": "アトレウスの弟", "added_in": "loop_002"},
+    {"grc": "Ἑλένη", "eng": "Helen", "ja": "ヘレネー", "kind": "hero", "added_in": "loop_002"},
+    {"grc": "Θερσίτης", "eng": "Thersites", "ja": "テルシーテース", "kind": "hero", "camp": "achaean", "added_in": "loop_002"},
+    {"grc": "Τηλέμαχος", "eng": "Telemachus", "ja": "テーレマコス", "kind": "hero", "note": "オデュッセウスの子", "added_in": "loop_002"},
+    {"grc": "Τυδεύς", "eng": "Tydeus", "ja": "テューデウス", "kind": "hero", "note": "ディオメーデースの父", "added_in": "loop_002"},
+    {"grc": "Λαέρτης", "eng": "Laertes", "ja": "ラーエルテース", "kind": "hero", "note": "オデュッセウスの父", "added_in": "loop_002"},
+
+    {"grc": "Ἰθάκη", "eng": "Ithaca", "ja": "イタケー", "kind": "place", "added_in": "loop_002"},
+    {"grc": "Αὐλίς", "eng": "Aulis", "ja": "アウリス", "kind": "place", "added_in": "loop_002"},
+    {"grc": "Σκάμανδρος", "eng": "Scamander", "ja": "スカマンドロス", "kind": "place", "note": "トロイアの川", "added_in": "loop_002"},
+    {"grc": "Κάϋστριος", "eng": "Caystrius", "ja": "カユストリオス", "kind": "place", "note": "川の名", "added_in": "loop_002"},
+    {"grc": "Ἰκάριος", "eng": "Icarian", "ja": "イカリア", "kind": "place", "note": "海の名", "added_in": "loop_002"},
+    {"grc": "Ἀσία", "eng": "Asian", "ja": "アシア", "kind": "place", "note": "牧野の名", "added_in": "loop_002"},
+    {"grc": "Γερήνιος", "eng": "Gerenian", "ja": "ゲレーニア", "kind": "place", "note": "ネストールの添え名に用いる", "added_in": "loop_002"}
   ]
 }

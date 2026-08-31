@@ -13,15 +13,56 @@ from pipeline import checks
 pytestmark = pytest.mark.validation
 
 
-def test_t013_ja_line_numbers_match_source(ja_books, canonical_books):
-    """T-013 / G-01: 和訳の行番号集合が原文と過不足なく一致する。"""
+def test_t013_no_ja_line_outside_source(ja_books, canonical_books):
+    """T-013 / G-01: 訳に**原文に存在しない行**が無い。これは常に成り立つべき不変量。
+
+    行の不足は欠陥ではない(巻を分けて訳すのは正常な進め方)。完全性は T-013b が測る。
+    不変量と進捗指標を一つの述語に混ぜない(HC-085)。
+    """
     for book, ja in ja_books.items():
         assert book in canonical_books, f"巻 {book} の原文が無い"
         src = {ln["n"] for ln in canonical_books[book]["lines"]}
         got = {ln["n"] for ln in ja["lines"]}
-        assert got == src, (
-            f"巻 {book}: 訳に無い行 {sorted(src - got)[:10]} / 原文に無い行 {sorted(got - src)[:10]}"
+        extra = sorted(got - src)
+        assert not extra, (
+            f"巻 {book}: 原文に存在しない行が訳にある {extra[:10]}(計 {len(extra)})"
         )
+
+
+def test_t013b_coverage_is_reported_not_enforced(ja_books, canonical_books):
+    """T-013b: 被覆率が記録され、`complete` の申告が実態と一致する。
+
+    ここは「どれだけ揃ったか」を測る。少ないことは失敗にしないが、
+    **申告と実態が食い違うこと**は失敗にする —— 未訳を訳済みと偽らせない。
+    """
+    for book, ja in ja_books.items():
+        src = {ln["n"] for ln in canonical_books[book]["lines"]}
+        got = {ln["n"] for ln in ja["lines"]}
+        actual_complete = got == src
+        assert ja["complete"] is actual_complete, (
+            f"巻 {book}: complete={ja['complete']} と実態({actual_complete})が食い違う"
+        )
+        expected_cov = round(len(got) / len(src), 4)
+        assert abs(ja["coverage"] - expected_cov) < 1e-6, (
+            f"巻 {book}: coverage={ja['coverage']} が実測 {expected_cov} と食い違う"
+        )
+
+
+def test_t013c_translated_lines_are_a_prefix_run(ja_books, canonical_books):
+    """T-013c: 未訳の巻でも、訳した範囲が原文の行順に沿って連続している。
+
+    飛び飛びに訳すと、後から穴を埋めるときに整列を誤りやすい。
+    実測 2026-08-31: 第 1 巻は全訳、第 2 巻は本編 1–483 の連続範囲。
+    """
+    for book, ja in ja_books.items():
+        src_order = [ln["n"] for ln in canonical_books[book]["lines"]]
+        got = {ln["n"] for ln in ja["lines"]}
+        seen_gap = False
+        for n in src_order:
+            if n in got:
+                assert not seen_gap, f"巻 {book}: 行 {n} が未訳の穴より後にある(飛び訳)"
+            else:
+                seen_gap = True
 
 
 def test_t014_ja_lines_are_non_empty(ja_books):

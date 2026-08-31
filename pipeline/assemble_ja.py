@@ -54,25 +54,41 @@ def load_canonical(book: int, canonical_dir: Path = CANONICAL_DIR) -> dict:
 
 
 def assemble(book: int, *, src_dir: Path = SRC_DIR, canonical_dir: Path = CANONICAL_DIR) -> dict:
-    """訳を組み立て、原文の行番号集合と完全一致することを検算する(G-01)。"""
+    """訳を組み立て、原文と突き合わせる(G-01)。
+
+    **不変量と進捗指標を分ける(HC-085)。**
+
+    - 失敗にする(常に成り立つべき): 訳に**原文にない行**があること。行の対応がずれていること
+    - 測って出す(進捗): どれだけ揃ったか(被覆率)
+
+    巻を分けて訳すのは正常な進め方であり、行の不足は欠陥ではない。
+    「まだ無い」と「あってはならない」を同じ検査で扱わない。
+    """
     frag = read_fragments(book, src_dir)
     canon = load_canonical(book, canonical_dir)
     expected = [ln["n"] for ln in canon["lines"]]
     expected_set = set(expected)
     got_set = set(frag)
 
-    missing = sorted(expected_set - got_set)
+    # 不変量: 原文に無い行を訳が持っていてはならない。これは常に失敗にする。
     extra = sorted(got_set - expected_set)
-    if missing or extra:
+    if extra:
         raise ValueError(
-            f"巻 {book}: 行番号が原文と一致しない。"
-            f"訳に無い行 {missing[:20]}(計 {len(missing)}) / "
-            f"原文に無い行 {extra[:20]}(計 {len(extra)})"
+            f"巻 {book}: 原文に存在しない行が訳にある {extra[:20]}(計 {len(extra)})。"
+            "行番号の打ち間違いか、底本の取り違えを疑う"
         )
+
+    # 進捗: 揃っていない分は測って出す。欠陥ではない。
+    translated = [n for n in expected if n in got_set]
+    missing = [n for n in expected if n not in got_set]
 
     return {
         "book": book,
-        "line_count": len(expected),
+        "line_count": len(translated),
+        "source_line_count": len(expected),
+        "complete": not missing,
+        "coverage": round(len(translated) / len(expected), 4),
+        "untranslated_from": missing[0] if missing else None,
         "source_urn": "urn:cts:greekLit:tlg0012.tlg001.perseus-grc2",
         "translation": {
             "by": "Claude (Anthropic)",
@@ -80,7 +96,7 @@ def assemble(book: int, *, src_dir: Path = SRC_DIR, canonical_dir: Path = CANONI
             "policy": "原文 1 行 = 訳 1 行。逐語寄りの現代語散文",
             "disclaimer": "学術的な定訳ではない。保証するのは行の対応と表記の一貫性であり、訳質ではない",
         },
-        "lines": [{"n": n, "ja": frag[n]} for n in expected],
+        "lines": [{"n": n, "ja": frag[n]} for n in translated],
     }
 
 

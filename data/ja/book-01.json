@@ -1,6 +1,10 @@
 {
  "book": 1,
  "line_count": 611,
+ "source_line_count": 611,
+ "complete": true,
+ "coverage": 1.0,
+ "untranslated_from": null,
  "source_urn": "urn:cts:greekLit:tlg0012.tlg001.perseus-grc2",
  "translation": {
   "by": "Claude (Anthropic)",
