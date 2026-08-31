@@ -100,6 +100,12 @@ def test_t029a_no_two_persons_share_katakana(glossary):
     for e in glossary["entries"]:
         if e["kind"] not in ("god", "hero"):
             continue
+        if e.get("variant_of"):
+            # **同じ存在の別の原語形**(Ἀθηναίη は Ἀθήνη の異形)。
+            # 同じカタカナになるのは当然であり、別人の衝突ではない。
+            # この項目を置くのは、--grc で異形を引いたときに「新規」と
+            # 答えさせないため —— それが無かったせいで四度も綴りを誤った。
+            continue
         ja = e["ja"]
         if ja in seen and seen[ja] != e["grc"]:
             clashes.append((ja, seen[ja], e["grc"]))
@@ -120,6 +126,8 @@ def test_t029b_stem_sharing_matches_measurement(glossary):
     seen: dict[str, str] = {}
     sharing = set()
     for e in glossary["entries"]:
+        if e.get("variant_of"):
+            continue                      # 同じ存在の別形(T-029a と同じ理由)
         ja = e["ja"]
         if ja in seen and seen[ja] != e["grc"]:
             sharing.add((ja, seen[ja], e["grc"]))
