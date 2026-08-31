@@ -84,9 +84,6 @@ def lookup(fragment: str) -> None:
                 print(f"  {e['grc']} → {e['ja']}  (eng={e['eng']})")
 
 
-KATAKANA = re.compile(r"[ァ-ヺー]{2,}")
-
-
 def check(tsv: str) -> int:
     """訳した直後の TSV を、その場で対訳表に照らす。
 
@@ -94,31 +91,38 @@ def check(tsv: str) -> int:
     loop_014 と loop_016 で**同じ語(プローテシラーオス / 正: プロテシラーオス)を
     同じように誤った**。長音の有無のような差は記憶では防げないので、
     書いた直後に機械が言う経路を置く。凍結表記が正 —— 訳文の側を直す。
+
+    **判定は T-015 と同じ実装(pipeline.checks)を呼ぶ。** 以前ここは
+    「対訳表の語を含むか」という緩い包含判定を持っていて、
+    アテーナイエー は アテーナイ を含むという理由で通り抜けた
+    (loop_020 と loop_022 で二度)。二つの検査が別々の判定を持っていること自体が
+    欠陥だったので、実装を一本にした —— この検査を通れば T-015 も通る。
     """
-    known: set[str] = set()
+    sys.path.insert(0, str(ROOT))   # スクリプト直接起動でも pipeline を解決できるように
+    from pipeline import checks
+
+    glossary: dict = {"entries": [], "allow_katakana": []}
     for name in ("glossary.json", "glossary.catalogue.json"):
         path = ROOT / "data" / name
         if not path.exists():
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
-        known.update(e["ja"] for e in data["entries"])
-        known.update(data.get("allow_katakana", []))
+        glossary["entries"].extend(data["entries"])
+        glossary["allow_katakana"].extend(data.get("allow_katakana", []))
 
-    offenders = []
-    for i, line in enumerate(pathlib.Path(tsv).read_text(encoding="utf-8").splitlines(), 1):
-        if "\t" not in line:
-            continue
-        n, ja = line.split("\t", 1)
-        for term in KATAKANA.findall(ja):
-            if not any(term in k or k in term for k in known):
-                offenders.append((n, term))
+    lines = []
+    for line in pathlib.Path(tsv).read_text(encoding="utf-8").splitlines():
+        if "	" in line:
+            n, ja = line.split("	", 1)
+            lines.append({"n": int(n), "ja": ja})
+    offenders = checks.proper_nouns_outside_glossary({0: {"lines": lines}}, glossary)
 
     if not offenders:
         print(f"OK: {tsv} に表外のカタカナは無い")
         return 0
     print(f"表外のカタカナ {len(offenders)} 件 —— 原語で引き直すこと:")
-    for n, term in offenders:
-        print(f"  行 {n}: {term}")
+    for o in offenders:
+        print(f"  行 {o['n']}: {o['term']}")
     return 1
 
 

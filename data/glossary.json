@@ -18,7 +18,8 @@
     "プラムネイオス",
     "カルキス",
     "キュミンディス",
-    "ミズキ"
+    "ミズキ",
+    "プレトロン"
   ],
   "entries": [
     {
@@ -5382,6 +5383,112 @@
       "camp": "trojan",
       "added_in": "loop_021",
       "note": "トロースの父称。第20巻463行"
+    },
+    {
+      "grc": "Πηλεγών",
+      "eng": "Pelegon",
+      "ja": "ペレゴーン",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "アクシオスとペリボイアの子。アステロパイオスの父"
+    },
+    {
+      "grc": "Ἄλτης",
+      "eng": "Altes",
+      "ja": "アルテース",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "レレゲス勢の王。ラーオトエーの父"
+    },
+    {
+      "grc": "Λαοθόη",
+      "eng": "Laothoe",
+      "ja": "ラーオトエー",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "アルテースの娘。プリアモスの妻でリュカーオーンとポリュドーロスの母"
+    },
+    {
+      "grc": "Περίβοια",
+      "eng": "Periboea",
+      "ja": "ペリボイア",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "アケッサメノスの長女。アクシオスとの間にペレゴーンを生んだ"
+    },
+    {
+      "grc": "Ἀκεσσαμενός",
+      "eng": "Acessamenus",
+      "ja": "アケッサメノス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "ペリボイアの父"
+    },
+    {
+      "grc": "Ἀχελώϊος",
+      "eng": "Achelous",
+      "ja": "アケローイオス",
+      "kind": "place",
+      "added_in": "loop_022",
+      "note": "大河。オーケアノスに次ぐとされる"
+    },
+    {
+      "grc": "Ἀστύπυλος",
+      "eng": "Astypylus",
+      "ja": "アステュピュロス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "パイオネス勢"
+    },
+    {
+      "grc": "Μνῆσος",
+      "eng": "Mnesus",
+      "ja": "ムネーソス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "パイオネス勢"
+    },
+    {
+      "grc": "Θρασίος",
+      "eng": "Thrasius",
+      "ja": "トラシオス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "パイオネス勢"
+    },
+    {
+      "grc": "Αἴνιος",
+      "eng": "Aenius",
+      "ja": "アイニオス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "パイオネス勢"
+    },
+    {
+      "grc": "Ἰλήϊος",
+      "eng": "Ileus",
+      "ja": "イーレーイオス",
+      "kind": "hero",
+      "camp": "trojan",
+      "added_in": "loop_022",
+      "note": "第21巻558行「イーレーイオスの平野」の形。地名の形容として現れる"
+    },
+    {
+      "grc": "Ἰήσων",
+      "eng": "Jason",
+      "ja": "イエーソーン",
+      "kind": "hero",
+      "added_in": "loop_022",
+      "note": "レームノスのエウエーノスの父。第7巻469行と同じ人物"
     }
   ]
 }
