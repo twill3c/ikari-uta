@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import functools
 import http.server
+import json
 import socketserver
 import sys
 import threading
@@ -37,6 +38,12 @@ def serve(directory: Path):
     httpd = socketserver.TCPServer(("127.0.0.1", 0), handler)
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     return httpd, httpd.server_address[1]
+
+
+def _has_untranslated_book() -> bool:
+    """未訳の巻が残っているか。出荷物そのものから読む(仕様の写しではなく実測)。"""
+    manifest = json.loads((OUT_DIR / "data" / "manifest.json").read_text(encoding="utf-8"))
+    return any(b["translated_lines"] < b["line_count"] for b in manifest["books"])
 
 
 def check(page, url: str, label: str, must_contain: list[str], failures: list[str]) -> None:
@@ -124,8 +131,18 @@ def main() -> int:
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page()
-            check(page, f"{base}/index.html", "index",
-                  ["怒り歌", "15,687", "準備中", "Perseus", "機械翻訳"], failures)
+            # 「準備中」は**未訳の巻が残っている間だけ**画面に出る文言である。
+            # 期待値に直書きすると、全 24 巻を訳し終えた日に、この検査は
+            # 「アプリが壊れた」と報告する —— 実際には正常に完成しただけなのに(HC-102)。
+            # そこで前提を manifest から作り、どちらの局面でも正しく判定する。
+            expect = ["怒り歌", "15,687", "Perseus", "機械翻訳"]
+            if _has_untranslated_book():
+                expect.append("準備中")
+            check(page, f"{base}/index.html", "index", expect, failures)
+            if not _has_untranslated_book():
+                page.goto(f"{base}/index.html", wait_until="networkidle")
+                if "準備中" in page.inner_text("body"):
+                    failures.append("index: 全巻訳し終えているのに「準備中」が残っている")
             check(page, f"{base}/read.html?book=1", "read-book01",
                   ["第 1 巻", "611 行", "怒りを歌え", "Perseus", "機械翻訳"], failures)
             # 「準備中」は入れない —— 第 9 巻は loop_010 で訳し終えた。
