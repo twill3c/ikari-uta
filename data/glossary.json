@@ -2214,6 +2214,134 @@
    "kind": "place",
    "note": "泉の名。第6巻457行",
    "added_in": "loop_007"
+  },
+  {
+   "grc": "Ἀρηΐθοος",
+   "eng": "Areithous",
+   "ja": "アレイトオス",
+   "kind": "hero",
+   "added_in": "loop_008",
+   "note": "棍棒使い。メネスティオスの父"
+  },
+  {
+   "grc": "Μενέσθιος",
+   "eng": "Menesthius",
+   "ja": "メネスティオス",
+   "kind": "hero",
+   "added_in": "loop_008",
+   "camp": "trojan",
+   "note": "アルネーの人"
+  },
+  {
+   "grc": "Φυλομέδουσα",
+   "eng": "Phylomedusa",
+   "ja": "ピュロメドゥーサ",
+   "kind": "hero",
+   "added_in": "loop_008",
+   "note": "アレイトオスの妻"
+  },
+  {
+   "grc": "Ἠϊονεύς",
+   "eng": "Eioneus",
+   "ja": "エイオネウス",
+   "kind": "hero",
+   "added_in": "loop_008",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Ἰφίνοος",
+   "eng": "Iphinous",
+   "ja": "イーピノオス",
+   "kind": "hero",
+   "added_in": "loop_008",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Δεξίος",
+   "eng": "Dexios",
+   "ja": "デクシオス",
+   "kind": "hero",
+   "added_in": "loop_008",
+   "camp": "achaean",
+   "note": "イーピノオスの父"
+  },
+  {
+   "grc": "Ἄρνη",
+   "eng": "Arne",
+   "ja": "アルネー",
+   "kind": "place",
+   "added_in": "loop_008"
+  },
+  {
+   "grc": "Κελάδων",
+   "eng": "Celadon",
+   "ja": "ケラドーン",
+   "kind": "place",
+   "added_in": "loop_008",
+   "note": "川の名"
+  },
+  {
+   "grc": "Φειά",
+   "eng": "Pheia",
+   "ja": "ペイア",
+   "kind": "place",
+   "added_in": "loop_008"
+  },
+  {
+   "grc": "Ἰάρδανος",
+   "eng": "Iardanus",
+   "ja": "イアルダノス",
+   "kind": "place",
+   "added_in": "loop_008",
+   "note": "川の名"
+  },
+  {
+   "grc": "Λυκόοργος",
+   "eng": "Lycurgus2",
+   "ja": "リュコオルゴス",
+   "kind": "hero",
+   "added_in": "loop_008",
+   "note": "**同名異人**。第6巻のディオニューソスを追ったドリュアースの子リュクールゴス(Λυκοῦργος)とは別人。アルカディアでアレイトオスを討った"
+  },
+  {
+   "grc": "Τυχίος",
+   "eng": "Tychius",
+   "ja": "テュキオス",
+   "kind": "hero",
+   "note": "ヒュレーの革職人。アイアースの楯を作った",
+   "added_in": "loop_008"
+  },
+  {
+   "grc": "Μυκήνη",
+   "eng": "Mycene",
+   "ja": "ミュケーナイ",
+   "kind": "place",
+   "note": "第7巻180行の単数形。Μυκῆναι と同じ都で表記を揃える",
+   "added_in": "loop_008"
+  },
+  {
+   "grc": "Ἰήσων",
+   "eng": "Jason",
+   "ja": "イエーソーン",
+   "kind": "hero",
+   "note": "レームノス王エウネーオスの父",
+   "added_in": "loop_008"
+  },
+  {
+   "grc": "Εὔνηος",
+   "eng": "Euneus",
+   "ja": "エウネーオス",
+   "kind": "hero",
+   "note": "レームノスの王。酒を送った",
+   "added_in": "loop_008"
+  },
+  {
+   "grc": "Ὑψιπύλη",
+   "eng": "Hypsipyle",
+   "ja": "ヒュプシピュレー",
+   "kind": "hero",
+   "note": "エウネーオスの母",
+   "added_in": "loop_008"
   }
  ]
 }
