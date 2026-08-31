@@ -4,3 +4,6 @@
 {"v": "1.2", "ts": "2026-08-31T10:57:42+09:00", "project": "ikari-uta", "loop_id": "loop_004", "event": "test_run", "data": {"stage": 5, "command": "pytest -q + text_hygiene + inspect_site", "result": "pass", "passed": 51, "failed": 0, "note": "51件全緑・字種違反0件・実ブラウザ検品OK"}}
 {"v": "1.2", "ts": "2026-08-31T10:57:43+09:00", "project": "ikari-uta", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "note": "訳済み1949行。既存の検査で新規の失敗なし"}}
 {"v": "1.2", "ts": "2026-08-31T10:57:43+09:00", "project": "ikari-uta", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass", "note": "README の進捗表に第3巻を追加"}}
+{"v": "1.2", "ts": "2026-08-31T10:58:02+09:00", "project": "ikari-uta", "loop_id": "loop_004", "event": "commit", "data": {"sha": "6569b2c", "kind": "feat", "message": "第3巻461行を完訳(loop_004)", "files_changed": 17}}
+{"v": "1.2", "ts": "2026-08-31T10:58:38+09:00", "project": "ikari-uta", "loop_id": "loop_004", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass", "note": "コミット 6569b2c を積み、本番投入と検品まで完了"}}
+{"v": "1.2", "ts": "2026-08-31T10:58:38+09:00", "project": "ikari-uta", "loop_id": "loop_004", "event": "loop_end", "data": {"outcome": "success", "summary": "第3巻461行を完訳。対訳表27語追加。訳済み計1949行を本番投入", "failure_count": 0}}
