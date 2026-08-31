@@ -65,7 +65,42 @@ def divergences() -> list[tuple[str, list[tuple[tuple[int, int], str]]]]:
     return sorted(out, key=lambda x: x[1][0][0])
 
 
+def existing(book: int) -> dict[int, str]:
+    """これから訳す巻の各行のうち、**同じ原文行がすでに他巻で訳されている**ものを返す。
+
+    T-032 は出荷前に揺れを捕まえるが、捕まえてから直すより、
+    書く前に既訳を手元に置くほうが速い。同じ道具を、門ではなく地図として使う。
+
+    **そのまま貼ってはならない。** 底本で同一の行でも、前後の構文枠が違えば
+    日本語の語尾は変わる(第20巻78行と第22巻267行は同じ行だが、
+    一方は「命じていた」の目的語、一方は「〜するまでは」の内容だった)。
+    枠に依らない形に両方を書き直すのが正しい直し方で、片方を写すことではない。
+    """
+    grc, ja = load()
+    target = {}
+    for g, locs in grc.items():
+        here = [n for b, n in locs if b == book]
+        if not here:
+            continue
+        others = [(b, n) for b, n in locs if b != book and (b, n) in ja]
+        if not others:
+            continue
+        vals = {normalize(ja[k]) for k in others}
+        if len(vals) != 1:          # 既訳どうしが割れている行は、勝手に選ばない
+            continue
+        for n in here:
+            target[n] = ja[others[0]]
+    return dict(sorted(target.items()))
+
+
 def main(argv: list[str]) -> int:
+    if len(argv) >= 2 and argv[0] == "--existing":
+        rows = existing(int(argv[1]))
+        for n, v in rows.items():
+            print(f"{n}	{v}")
+        print(f"\n# 既訳のある行 {len(rows)} 本(第 {argv[1]} 巻)")
+        return 0
+
     div = divergences()
     if "--list" in argv or (argv and argv[0].isdigit()):
         book = int(argv[0]) if argv and argv[0].isdigit() else None
