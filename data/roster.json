@@ -1,0 +1,322 @@
+{
+ "note": "軍船の一覧(第2巻484-759)から一件ずつ確認して組んだアカイア側の名簿。隻数は本文の記述による。合計は検算であって前提ではない。",
+ "measured_on": "2026-08-31",
+ "loop": "loop_003",
+ "camp": "achaean",
+ "contingent_count": 29,
+ "ship_total": 1186,
+ "contingents": [
+  {
+   "from_line": 494,
+   "to_line": 510,
+   "region": "ボイオティア",
+   "leaders": [
+    "ペーネレオース",
+    "レーイトス",
+    "アルケシラーオス",
+    "プロトエーノール",
+    "クロニオス"
+   ],
+   "ships": 50,
+   "ship_line": 509
+  },
+  {
+   "from_line": 511,
+   "to_line": 516,
+   "region": "アスプレードーン・オルコメノス",
+   "leaders": [
+    "アスカラポス",
+    "イアルメノス"
+   ],
+   "ships": 30,
+   "ship_line": 516
+  },
+  {
+   "from_line": 517,
+   "to_line": 524,
+   "region": "ポーキス",
+   "leaders": [
+    "スケディオス",
+    "エピストロポス"
+   ],
+   "ships": 40,
+   "ship_line": 524
+  },
+  {
+   "from_line": 527,
+   "to_line": 535,
+   "region": "ロクリス",
+   "leaders": [
+    "アイアース(オイレウスの子)"
+   ],
+   "ships": 40,
+   "ship_line": 534
+  },
+  {
+   "from_line": 536,
+   "to_line": 545,
+   "region": "アバンテス(エウボイア)",
+   "leaders": [
+    "エレペーノール"
+   ],
+   "ships": 40,
+   "ship_line": 545
+  },
+  {
+   "from_line": 546,
+   "to_line": 556,
+   "region": "アテーナイ",
+   "leaders": [
+    "メネステウス"
+   ],
+   "ships": 50,
+   "ship_line": 556
+  },
+  {
+   "from_line": 557,
+   "to_line": 558,
+   "region": "サラミース",
+   "leaders": [
+    "アイアース(テラモーンの子)"
+   ],
+   "ships": 12,
+   "ship_line": 557
+  },
+  {
+   "from_line": 559,
+   "to_line": 568,
+   "region": "アルゴス・ティーリュンス",
+   "leaders": [
+    "ディオメーデース",
+    "ステネロス",
+    "エウリュアロス"
+   ],
+   "ships": 80,
+   "ship_line": 568
+  },
+  {
+   "from_line": 569,
+   "to_line": 580,
+   "region": "ミュケーナイ",
+   "leaders": [
+    "アガメムノーン"
+   ],
+   "ships": 100,
+   "ship_line": 576
+  },
+  {
+   "from_line": 581,
+   "to_line": 590,
+   "region": "ラケダイモーン",
+   "leaders": [
+    "メネラーオス"
+   ],
+   "ships": 60,
+   "ship_line": 587
+  },
+  {
+   "from_line": 591,
+   "to_line": 602,
+   "region": "ピュロス",
+   "leaders": [
+    "ネストール"
+   ],
+   "ships": 90,
+   "ship_line": 602
+  },
+  {
+   "from_line": 603,
+   "to_line": 614,
+   "region": "アルカディエー",
+   "leaders": [
+    "アガペーノール"
+   ],
+   "ships": 60,
+   "ship_line": 610
+  },
+  {
+   "from_line": 615,
+   "to_line": 624,
+   "region": "エーリス(エペイオイ)",
+   "leaders": [
+    "アンピマコス",
+    "タルピオス",
+    "ディオーレース",
+    "ポリュクセイノス"
+   ],
+   "ships": 40,
+   "ship_line": 618,
+   "note": "本文は「四人の将、各人に十隻」。掛け算が要る箇所"
+  },
+  {
+   "from_line": 625,
+   "to_line": 630,
+   "region": "ドゥーリキオン・エキーナイ",
+   "leaders": [
+    "メゲース"
+   ],
+   "ships": 40,
+   "ship_line": 630
+  },
+  {
+   "from_line": 631,
+   "to_line": 637,
+   "region": "ケパレーネス(イタケー)",
+   "leaders": [
+    "オデュッセウス"
+   ],
+   "ships": 12,
+   "ship_line": 637
+  },
+  {
+   "from_line": 638,
+   "to_line": 644,
+   "region": "アイトーリア",
+   "leaders": [
+    "トオアース"
+   ],
+   "ships": 40,
+   "ship_line": 644
+  },
+  {
+   "from_line": 645,
+   "to_line": 652,
+   "region": "クレータ",
+   "leaders": [
+    "イドメネウス",
+    "メーリオネース"
+   ],
+   "ships": 80,
+   "ship_line": 652
+  },
+  {
+   "from_line": 653,
+   "to_line": 670,
+   "region": "ロドス",
+   "leaders": [
+    "トレーポレモス"
+   ],
+   "ships": 9,
+   "ship_line": 654
+  },
+  {
+   "from_line": 671,
+   "to_line": 675,
+   "region": "シュメー",
+   "leaders": [
+    "ニーレウス"
+   ],
+   "ships": 3,
+   "ship_line": 671
+  },
+  {
+   "from_line": 676,
+   "to_line": 680,
+   "region": "ニーシュロス・コース等",
+   "leaders": [
+    "ペイディッポス",
+    "アンティポス"
+   ],
+   "ships": 30,
+   "ship_line": 680
+  },
+  {
+   "from_line": 681,
+   "to_line": 694,
+   "region": "ミュルミドン(プティーエー)",
+   "leaders": [
+    "アキレウス"
+   ],
+   "ships": 50,
+   "ship_line": 685,
+   "note": "戦列に出ていない"
+  },
+  {
+   "from_line": 695,
+   "to_line": 710,
+   "region": "ピュラケー",
+   "leaders": [
+    "プロテシラーオス",
+    "ポダルケース"
+   ],
+   "ships": 40,
+   "ship_line": 710,
+   "note": "将は既に戦死。弟が代行"
+  },
+  {
+   "from_line": 711,
+   "to_line": 715,
+   "region": "ペライ",
+   "leaders": [
+    "エウメーロス"
+   ],
+   "ships": 11,
+   "ship_line": 713
+  },
+  {
+   "from_line": 716,
+   "to_line": 728,
+   "region": "メトーネー等",
+   "leaders": [
+    "ピロクテーテース",
+    "メドーン"
+   ],
+   "ships": 7,
+   "ship_line": 719,
+   "note": "将はレームノスに置き去り。代行あり"
+  },
+  {
+   "from_line": 729,
+   "to_line": 733,
+   "region": "トリッケー",
+   "leaders": [
+    "ポダレイリオス",
+    "マカーオーン"
+   ],
+   "ships": 30,
+   "ship_line": 733
+  },
+  {
+   "from_line": 734,
+   "to_line": 737,
+   "region": "オルメニオン",
+   "leaders": [
+    "エウリュピュロス"
+   ],
+   "ships": 40,
+   "ship_line": 737
+  },
+  {
+   "from_line": 738,
+   "to_line": 747,
+   "region": "アルギッサ",
+   "leaders": [
+    "ポリュポイテース",
+    "レオンテウス"
+   ],
+   "ships": 40,
+   "ship_line": 747
+  },
+  {
+   "from_line": 748,
+   "to_line": 755,
+   "region": "キュポス",
+   "leaders": [
+    "グーネウス"
+   ],
+   "ships": 22,
+   "ship_line": 748,
+   "note": "本文は『二と二十』の複合数詞"
+  },
+  {
+   "from_line": 756,
+   "to_line": 759,
+   "region": "マグネーテス",
+   "leaders": [
+    "プロトオス"
+   ],
+   "ships": 40,
+   "ship_line": 759
+  }
+ ]
+}
