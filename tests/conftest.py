@@ -34,9 +34,22 @@ def oracle() -> dict:
     return json.loads(_require(ORACLE).read_text(encoding="utf-8"))
 
 
+CATALOGUE_GLOSSARY = PROJECT_ROOT / "data" / "glossary.catalogue.json"
+
+
 @pytest.fixture(scope="session")
 def glossary() -> dict:
-    return json.loads(_require(GLOSSARY).read_text(encoding="utf-8"))
+    """本体と一覧の対訳表を統合して返す。
+
+    一覧(第 2 巻 484–877)は地名が大半で語数が桁違いに多いため別ファイルにしてある。
+    検査は統合後の表に対して行う —— 表を分けたことで G-03 が緩んではならない。
+    """
+    base = json.loads(_require(GLOSSARY).read_text(encoding="utf-8"))
+    if CATALOGUE_GLOSSARY.exists():
+        cat = json.loads(CATALOGUE_GLOSSARY.read_text(encoding="utf-8"))
+        base = dict(base)
+        base["entries"] = base["entries"] + cat["entries"]
+    return base
 
 
 @pytest.fixture(scope="session")

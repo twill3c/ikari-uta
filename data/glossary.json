@@ -7,7 +7,10 @@
     "candidate_source": "Murray 英訳 第1巻の大文字語を機械抽出し、英語の機能語・文頭語を除いた 114 候補から選定(2026-08-31)",
     "note": "凍結後の変更は専用ループで行い、既訳の全巻を洗い替える。表外表記は G-03 で fail にする"
   },
-  "allow_katakana": [],
+  "allow_katakana_note": "固有名詞ではないが、日本語で慣例的にカタカナで書く語。ここに挙げないと G-03 が落とす。",
+  "allow_katakana": [
+    "トネリコ"
+  ],
   "entries": [
     {"grc": "Ζεύς", "eng": "Zeus", "ja": "ゼウス", "kind": "god"},
     {"grc": "Ἥρη", "eng": "Hera", "ja": "ヘーラー", "kind": "god"},
