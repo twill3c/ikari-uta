@@ -59,6 +59,26 @@ MEASURED_STEM_SHARING = {
     ("クサントス", "Ξάνθος(人)", "Ξάνθος"),
     # Μυκήνη(単数)と Μυκῆναι(複数)は同じ都。表記を揃えたので語幹を共有する。
     ("ミュケーナイ", "Μυκήνη", "Μυκῆναι"),
+    # loop_010(第 9 巻)で追加。いずれも**日本語の表記体系が原語の差を写せない**組。
+    # メッセーニアの町 Ἄνθεια と、プロイトスの妻 Ἄντεια。θ/τ の差は写らない。
+    ("アンテイア", "Ἄντεια", "Ἄνθεια"),
+    # 別人だがアクセントしか違わない二人(下の MEASURED_PERSON_CLASHES も参照)。
+    ("エウエーノス", "Εὔηνος", "Εὐηνός"),
+    # 別人だが λ/ρ しか違わない二人(同上)。
+    ("デーイピュロス", "Δηΐπυλος", "Δηΐπυρος"),
+}
+
+
+# **別人でありながら同じカタカナになる組。**
+# T-029a は本来これを落とすが、下記は原語の側の差が
+# 日本語の表記体系に写らない(λ/ρ は同じラ行になり、アクセントは書かない)ため、
+# 私の側で直せる欠陥ではない。**直せないものをゲートにしない**(HC-002)。
+# 直す代わりに (a) 実測として固定し、(b) 対訳表の note に原語併記の根拠を残す。
+# 新規の偶発衝突は、この集合に無いものとして今も落ちる。
+# 実測 2026-08-31(loop_010)。
+MEASURED_PERSON_CLASHES = {
+    ("デーイピュロス", "Δηΐπυλος", "Δηΐπυρος"),
+    ("エウエーノス", "Εὔηνος", "Εὐηνός"),
 }
 
 
@@ -77,7 +97,12 @@ def test_t029a_no_two_persons_share_katakana(glossary):
         if ja in seen and seen[ja] != e["grc"]:
             clashes.append((ja, seen[ja], e["grc"]))
         seen[ja] = e["grc"]
-    assert not clashes, f"別人が同じカタカナを持っている: {clashes}"
+    unexpected = set(clashes) - MEASURED_PERSON_CLASHES
+    assert not unexpected, (
+        f"別人が同じカタカナを持っている(実測外): {sorted(unexpected)}"
+    )
+    stale = MEASURED_PERSON_CLASHES - set(clashes)
+    assert not stale, f"実測に挙げた衝突が消えている(緩めすぎの見張り): {sorted(stale)}"
 
 
 def test_t029b_stem_sharing_matches_measurement(glossary):

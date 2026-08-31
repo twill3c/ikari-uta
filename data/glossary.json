@@ -11,7 +11,9 @@
  "allow_katakana": [
   "トネリコ",
   "ペーキュス",
-  "スペルト"
+  "スペルト",
+  "グエース",
+  "タラントン"
  ],
  "entries": [
   {
@@ -472,7 +474,7 @@
    "eng": "Thebe",
    "ja": "テーベー",
    "kind": "place",
-   "note": "**同表記異地**。(a) エーエティオーンのテーベー(トロイア近郊。第1・6巻) (b) ボイオティアのテーベー(七将の遠征先。第4・5巻)。原文は Θήβη / Θῆβαι と数が異なるが、日本語では同じカタカナになる。loop_005 で既に (b) をテーベーと訳出済みのため表記は変えない"
+   "note": "**同表記異地**。(a) エーエティオーンのテーベー(トロイア近郊。第1・6巻) (b) ボイオティアのテーベー(七将の遠征先。第4・5巻)。原文は Θήβη / Θῆβαι と数が異なるが、日本語では同じカタカナになる。loop_005 で既に (b) をテーベーと訳出済みのため表記は変えない (c) アイギュプトスのテーベー(百門の都。第9巻381-384行)。**三つ目の同名都市**"
   },
   {
    "grc": "Λῆμνος",
@@ -1769,7 +1771,7 @@
    "ja": "デーイピュロス",
    "kind": "hero",
    "camp": "achaean",
-   "note": "ステネロスの僚友",
+   "note": "ステネロスの僚友 / **第9巻83行の Δηΐπυρος と別人**。λ/ρ の差は日本語に写らない",
    "added_in": "loop_006"
   },
   {
@@ -1868,7 +1870,7 @@
    "ja": "アンテイア",
    "kind": "hero",
    "added_in": "loop_007",
-   "note": "プロイトスの妻"
+   "note": "プロイトスの妻 / 第9巻151行のメッセーニアの町アンテイア(Ἄνθεια)と同表記・別語"
   },
   {
    "grc": "Ἀνδρομάχη",
@@ -2434,7 +2436,8 @@
    "ja": "オルメノス",
    "kind": "hero",
    "camp": "trojan",
-   "added_in": "loop_009"
+   "added_in": "loop_009",
+   "note": "第9巻448行のアミュントールの父オルメノスは**同名異人**(第8巻はテウクロスが討つトロイア方)"
   },
   {
    "grc": "Ὀφελέστης",
@@ -2566,6 +2569,279 @@
    "kind": "god",
    "note": "陽ヘーリオスの呼び名",
    "added_in": "loop_009"
+  },
+  {
+   "grc": "Θρασυμήδης",
+   "eng": "Thrasymedes",
+   "ja": "トラシュメーデース",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "camp": "achaean",
+   "note": "ネストールの子"
+  },
+  {
+   "grc": "Ἀφαρεύς",
+   "eng": "Aphareus",
+   "ja": "アパレウス",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Δηΐπυρος",
+   "eng": "Deipyrus",
+   "ja": "デーイピュロス",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "camp": "achaean",
+   "note": "第9巻83行。**Δηΐπυλος(ステネロスの僚友)と別人**だが λ/ρ の差は日本語に写らず同じカタカナになる"
+  },
+  {
+   "grc": "Κρείων",
+   "eng": "Creon",
+   "ja": "クレイオーン",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "camp": "achaean",
+   "note": "リュコメーデースの父"
+  },
+  {
+   "grc": "Λυκομήδης",
+   "eng": "Lycomedes",
+   "ja": "リュコメーデース",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Χρυσόθεμις",
+   "eng": "Chrysothemis",
+   "ja": "クリューソテミス",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "camp": "achaean",
+   "note": "アガメムノーンの娘"
+  },
+  {
+   "grc": "Ἰφιάνασσα",
+   "eng": "Iphianassa",
+   "ja": "イーピアナッサ",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "camp": "achaean",
+   "note": "アガメムノーンの娘"
+  },
+  {
+   "grc": "Λέσβος",
+   "eng": "Lesbos",
+   "ja": "レスボス",
+   "kind": "place",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Καρδαμύλη",
+   "eng": "Cardamyle",
+   "ja": "カルダミュレー",
+   "kind": "place",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἐνόπη",
+   "eng": "Enope",
+   "ja": "エノペー",
+   "kind": "place",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἱρή",
+   "eng": "Hire",
+   "ja": "ヒレー",
+   "kind": "place",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἄνθεια",
+   "eng": "Antheia",
+   "ja": "アンテイア",
+   "kind": "place",
+   "added_in": "loop_010",
+   "note": "**同表記**。第6巻のプロイトスの妻アンテイア(Ἄντεια)とは別語・別人。日本語では書き分けられない"
+  },
+  {
+   "grc": "Αἴπεια",
+   "eng": "Aepeia",
+   "ja": "アイペイア",
+   "kind": "place",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Φοῖνιξ",
+   "eng": "Phoenix",
+   "ja": "ポイニクス",
+   "kind": "hero",
+   "note": "アキレウスの傅役。使節の一人",
+   "added_in": "loop_010",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Αἰακός",
+   "eng": "Aeacus",
+   "ja": "アイアコス",
+   "kind": "hero",
+   "note": "ペーレウスの父。アキレウスの祖父",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Αὐτομέδων",
+   "eng": "Automedon",
+   "ja": "アウトメドーン",
+   "kind": "hero",
+   "note": "アキレウスの御者",
+   "added_in": "loop_010",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Αἰγύπτιαι",
+   "eng": "Egyptian",
+   "ja": "アイギュプトス",
+   "kind": "place",
+   "note": "百門のテーベーの所在。第9巻382行",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἀμύντωρ",
+   "eng": "Amyntor",
+   "ja": "アミュントール",
+   "kind": "hero",
+   "note": "ポイニクスの父",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἐρινύς",
+   "eng": "Erinys",
+   "ja": "エリーニュス",
+   "kind": "god",
+   "note": "呪いを果たす女神",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Περσεφόνεια",
+   "eng": "Persephone",
+   "ja": "ペルセポネイア",
+   "kind": "god",
+   "note": "冥界の女王",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Δόλοπες",
+   "eng": "Dolopes",
+   "ja": "ドロペス",
+   "kind": "people",
+   "note": "ポイニクスが統べた民",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Κουρῆτες",
+   "eng": "Curetes",
+   "ja": "クーレーテス",
+   "kind": "people",
+   "note": "アイトーリア勢と戦った民",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Μελέαγρος",
+   "eng": "Meleager",
+   "ja": "メレアグロス",
+   "kind": "hero",
+   "note": "オイネウスの子。ポイニクスが語る先例",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἀλθαίη",
+   "eng": "Althaea",
+   "ja": "アルタイアー",
+   "kind": "hero",
+   "note": "メレアグロスの母",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Κλεοπάτρη",
+   "eng": "Cleopatra",
+   "ja": "クレオパトレー",
+   "kind": "hero",
+   "note": "メレアグロスの妻。異名アルキュオネー",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Μάρπησσα",
+   "eng": "Marpessa",
+   "ja": "マルペッサ",
+   "kind": "hero",
+   "note": "クレオパトレーの母",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Εὔηνος",
+   "eng": "Evenus",
+   "ja": "エウエーノス",
+   "kind": "hero",
+   "note": "マルペッサの父(第9巻557行)。**Εὐηνός(ミュネースらの父)と別人**だがアクセントの差は日本語に写らない",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἴδης",
+   "eng": "Idas",
+   "ja": "イーダース",
+   "kind": "hero",
+   "note": "マルペッサの夫。アポローンに弓を向けた",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἀλκυόνη",
+   "eng": "Halcyone",
+   "ja": "アルキュオネー",
+   "kind": "hero",
+   "note": "クレオパトレーの異名。翡翠にちなむ",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Φόρβας",
+   "eng": "Phorbas",
+   "ja": "ポルバース",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "note": "ディオメーデーの父"
+  },
+  {
+   "grc": "Διομήδη",
+   "eng": "Diomede",
+   "ja": "ディオメーデー",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "note": "レスボスの女。**ディオメーデース(Διομήδης)とは別人・別語**だが日本語では長音のみの差"
+  },
+  {
+   "grc": "Ἶφις",
+   "eng": "Iphis",
+   "ja": "イーピス",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "note": "スキュロスの女。パトロクロスに与えられた"
+  },
+  {
+   "grc": "Σκῦρος",
+   "eng": "Scyrus",
+   "ja": "スキュロス",
+   "kind": "place",
+   "added_in": "loop_010"
+  },
+  {
+   "grc": "Ἐνυεύς",
+   "eng": "Enyeus",
+   "ja": "エニュエウス",
+   "kind": "hero",
+   "added_in": "loop_010",
+   "note": "スキュロスの王"
   }
  ]
 }

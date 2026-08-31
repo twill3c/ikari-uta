@@ -74,14 +74,26 @@ def check(page, url: str, label: str, must_contain: list[str], failures: list[st
 def check_gap_note(page, base: str, failures: list[str]) -> None:
     """欠番注記の陽性・陰性対照(HC-041)。
 
-    出るべき場合(原文を表示している)と、出るべきでない場合(行が 1 本も描かれない)の
+    出るべき場合(行が描かれている)と、出るべきでない場合(行が 1 本も描かれない)の
     両方を押さえる。片方だけでは対照にならない。
+
+    **陰性対照は自分の前提を作る。** 以前はこれを「第 9 巻はまだ未訳だから行が出ない」に
+    依存させていたが、第 9 巻を訳した時点でその前提が消え、対照は
+    「アプリが壊れた」ではなく「対照の足場が無くなった」を報告した(loop_010)。
+    訳の進み具合で足場が消えないよう、表示切替を全部外して行 0 本を**こちらで作る**。
     """
     note = "行は底本にない"
     page.goto(f"{base}/read.html?book=9", wait_until="networkidle")
 
-    # 陰性対照: 和訳のみ表示 × 未訳の巻 → 行が描かれないので注記も出ない
+    # 陰性対照: 表示切替を全部外す → 行が 1 本も描かれないので注記も出ない。
+    # この前提は訳の進捗に依存しない。
+    page.uncheck("#v-ja")
     page.wait_for_timeout(150)
+    # 「行が 0 本」は #text が空であることではない —— 層を選んでいない旨の案内は出る。
+    # 数えるのは行そのもの(.ln)。
+    drawn = page.locator("#text .ln").count()
+    if drawn:
+        failures.append(f"欠番注記の陰性対照が壊れている: 全部外したのに行が {drawn} 本描かれている")
     if note in page.inner_text("#text"):
         failures.append("欠番注記: 行が 1 本も描かれていないのに注記が出ている(宙に浮いた注記)")
 
@@ -116,8 +128,10 @@ def main() -> int:
                   ["怒り歌", "15,687", "準備中", "Perseus", "機械翻訳"], failures)
             check(page, f"{base}/read.html?book=1", "read-book01",
                   ["第 1 巻", "611 行", "怒りを歌え", "Perseus", "機械翻訳"], failures)
+            # 「準備中」は入れない —— 第 9 巻は loop_010 で訳し終えた。
+            # 未訳の巻を見たいときは、その時点で未訳の巻を manifest から取る。
             check(page, f"{base}/read.html?book=9", "read-book09",
-                  ["第 9 巻", "準備中", "底本の欠番"], failures)
+                  ["第 9 巻", "709 行", "底本の欠番"], failures)
             check_gap_note(page, base, failures)
             browser.close()
     finally:
