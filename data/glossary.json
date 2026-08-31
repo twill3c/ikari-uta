@@ -2919,7 +2919,7 @@
    "ja": "レーソス",
    "kind": "hero",
    "added_in": "loop_011",
-   "note": "トレーキアの王。エイオネウスの子",
+   "note": "トレーキアの王。エイオネウスの子 / **同名異物**。第12巻20行はイーデーから流れ下る川の名",
    "camp": "trojan"
   },
   {
@@ -3348,6 +3348,184 @@
    "added_in": "loop_012",
    "note": "アスクレーピオスの子。医者",
    "camp": "achaean"
+  },
+  {
+   "grc": "Ἑπτάπορος",
+   "eng": "Heptaporus",
+   "ja": "ヘプタポロス",
+   "kind": "place",
+   "note": "イーデーから流れ下る川。第12巻20-21行",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Κάρησος",
+   "eng": "Caresus",
+   "ja": "カレーソス",
+   "kind": "place",
+   "note": "イーデーから流れ下る川。第12巻20-21行",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Ῥοδίος",
+   "eng": "Rhodius",
+   "ja": "ロディオス",
+   "kind": "place",
+   "note": "イーデーから流れ下る川。第12巻20-21行",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Γρήνικος",
+   "eng": "Granicus",
+   "ja": "グレーニコス",
+   "kind": "place",
+   "note": "イーデーから流れ下る川。第12巻20-21行",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Ἀλκάθοος",
+   "eng": "Alcathous",
+   "ja": "アルカトオス",
+   "kind": "hero",
+   "added_in": "loop_013",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Δηΐφοβος",
+   "eng": "Deiphobus",
+   "ja": "デーイポボス",
+   "kind": "hero",
+   "added_in": "loop_013",
+   "camp": "trojan",
+   "note": "プリアモスの子"
+  },
+  {
+   "grc": "Ὕρτακος",
+   "eng": "Hyrtacus",
+   "ja": "ヒュルタコス",
+   "kind": "hero",
+   "added_in": "loop_013",
+   "camp": "trojan",
+   "note": "アシオスの父"
+  },
+  {
+   "grc": "Ἀστεροπαῖος",
+   "eng": "Asteropaeus",
+   "ja": "アステロパイオス",
+   "kind": "hero",
+   "added_in": "loop_013",
+   "camp": "trojan",
+   "note": "パイオニア勢の将"
+  },
+  {
+   "grc": "Δευκαλίων",
+   "eng": "Deucalion",
+   "ja": "デウカリオーン",
+   "kind": "hero",
+   "added_in": "loop_013",
+   "camp": "achaean",
+   "note": "イドメネウスの父"
+  },
+  {
+   "grc": "Λαπίθαι",
+   "eng": "Lapithae",
+   "ja": "ラピタイ",
+   "kind": "people",
+   "added_in": "loop_013",
+   "note": "ポリュポイテースとレオンテウスの族"
+  },
+  {
+   "grc": "Ἰαμενός",
+   "eng": "Iamenus",
+   "ja": "イアメノス",
+   "kind": "hero",
+   "added_in": "loop_013",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Ἀδάμας",
+   "eng": "Adamas",
+   "ja": "アダマース",
+   "kind": "hero",
+   "added_in": "loop_013",
+   "camp": "trojan",
+   "note": "アシオスの子"
+  },
+  {
+   "grc": "Δάμασος",
+   "eng": "Damasus",
+   "ja": "ダマソス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Πύλων",
+   "eng": "Pylon",
+   "ja": "ピュローン",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Ἱππόμαχος",
+   "eng": "Hippomachus",
+   "ja": "ヒッポマコス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_013",
+   "note": "アンティマコスの子"
+  },
+  {
+   "grc": "Ἀντιφάτης",
+   "eng": "Antiphates",
+   "ja": "アンティパテース",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Μένων",
+   "eng": "Menon",
+   "ja": "メノーン",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Θοώτης",
+   "eng": "Thootes",
+   "ja": "トオーテース",
+   "kind": "hero",
+   "camp": "achaean",
+   "note": "メネステウスの伝令",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Πανδίων",
+   "eng": "Pandion",
+   "ja": "パンディオーン",
+   "kind": "hero",
+   "camp": "achaean",
+   "note": "テウクロスの弓を運ぶ",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Ἐπικλῆς",
+   "eng": "Epicles",
+   "ja": "エピクレース",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "サルペードーンの仲間",
+   "added_in": "loop_013"
+  },
+  {
+   "grc": "Ἀλκμάων",
+   "eng": "Alcmaon",
+   "ja": "アルクマーオーン",
+   "kind": "hero",
+   "camp": "achaean",
+   "note": "テストールの子",
+   "added_in": "loop_013"
   }
  ]
 }
