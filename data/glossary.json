@@ -13,7 +13,8 @@
   "ペーキュス",
   "スペルト",
   "グエース",
-  "タラントン"
+  "タラントン",
+  "カタイテュクス"
  ],
  "entries": [
   {
@@ -2249,7 +2250,8 @@
    "ja": "エイオネウス",
    "kind": "hero",
    "added_in": "loop_008",
-   "camp": "achaean"
+   "camp": "achaean",
+   "note": "**同名異人**。第10巻435行のレーソスの父エイオネウス(トレーキア方)とは別"
   },
   {
    "grc": "Ἰφίνοος",
@@ -2842,6 +2844,117 @@
    "kind": "hero",
    "added_in": "loop_010",
    "note": "スキュロスの王"
+  },
+  {
+   "grc": "Αὐτόλυκος",
+   "eng": "Autolycus",
+   "ja": "アウトリュコス",
+   "kind": "hero",
+   "added_in": "loop_011",
+   "note": "兜の由来。館を穿って奪った"
+  },
+  {
+   "grc": "Σκάνδεια",
+   "eng": "Scandeia",
+   "ja": "スカンデイア",
+   "kind": "place",
+   "added_in": "loop_011"
+  },
+  {
+   "grc": "Ἀμφιδάμας",
+   "eng": "Amphidamas",
+   "ja": "アンピダマース",
+   "kind": "hero",
+   "added_in": "loop_011",
+   "note": "キュテーラの人"
+  },
+  {
+   "grc": "Μόλος",
+   "eng": "Molus",
+   "ja": "モロス",
+   "kind": "hero",
+   "added_in": "loop_011",
+   "camp": "achaean",
+   "note": "メーリオネースの父"
+  },
+  {
+   "grc": "Δόλων",
+   "eng": "Dolon",
+   "ja": "ドローン",
+   "kind": "hero",
+   "added_in": "loop_011",
+   "camp": "trojan",
+   "note": "エウメーデースの子。夜の物見に出て捕らわれる"
+  },
+  {
+   "grc": "Εὐμήδης",
+   "eng": "Eumedes",
+   "ja": "エウメーデース",
+   "kind": "hero",
+   "added_in": "loop_011",
+   "camp": "trojan",
+   "note": "伝令。ドローンの父"
+  },
+  {
+   "grc": "Κύθηρα",
+   "eng": "Cythera",
+   "ja": "キュテーラ",
+   "kind": "place",
+   "added_in": "loop_011"
+  },
+  {
+   "grc": "Ἶλος",
+   "eng": "Ilus",
+   "ja": "イーロス",
+   "kind": "hero",
+   "note": "その墓がトロイエー平野の目印。第10巻415行",
+   "added_in": "loop_011"
+  },
+  {
+   "grc": "Ῥῆσος",
+   "eng": "Rhesus",
+   "ja": "レーソス",
+   "kind": "hero",
+   "added_in": "loop_011",
+   "note": "トレーキアの王。エイオネウスの子",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Λέλεγες",
+   "eng": "Leleges",
+   "ja": "レレゲス",
+   "kind": "people",
+   "added_in": "loop_011"
+  },
+  {
+   "grc": "Καύκωνες",
+   "eng": "Caucones",
+   "ja": "カウコーネス",
+   "kind": "people",
+   "added_in": "loop_011"
+  },
+  {
+   "grc": "Πελασγοί",
+   "eng": "Pelasgi",
+   "ja": "ペラスゴイ",
+   "kind": "people",
+   "added_in": "loop_011"
+  },
+  {
+   "grc": "Θύμβρη",
+   "eng": "Thymbre",
+   "ja": "テュンブレー",
+   "kind": "place",
+   "added_in": "loop_011"
+  },
+  {
+   "grc": "Ἱπποκόων",
+   "eng": "Hippocoon",
+   "ja": "ヒッポコオーン",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "レーソスの従兄弟",
+   "added_in": "loop_011"
   }
  ]
 }
