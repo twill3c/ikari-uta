@@ -14,7 +14,8 @@
   "スペルト",
   "グエース",
   "タラントン",
-  "カタイテュクス"
+  "カタイテュクス",
+  "プラムネイオス"
  ],
  "entries": [
   {
@@ -1889,7 +1890,7 @@
    "kind": "hero",
    "added_in": "loop_007",
    "camp": "trojan",
-   "note": "グラウコスの父"
+   "note": "グラウコスの父 / **同名異人**。第11巻122行はアンティマコスの子(トロイア方)"
   },
   {
    "grc": "Ἴσανδρος",
@@ -1985,7 +1986,7 @@
    "ja": "キッセウス",
    "kind": "hero",
    "added_in": "loop_007",
-   "note": "テアノーの父"
+   "note": "テアノーの父 / 第11巻223行は Κισσῆς の形。イーピダマースの母方の祖父として再登場"
   },
   {
    "grc": "Ἀστυάναξ",
@@ -2075,7 +2076,8 @@
    "ja": "オペルティオス",
    "kind": "hero",
    "added_in": "loop_007",
-   "camp": "trojan"
+   "camp": "trojan",
+   "note": "**同名異人**。第11巻302行はヘクトールが討つアカイア方"
   },
   {
    "grc": "Αἴσηπος2",
@@ -2430,7 +2432,8 @@
    "ja": "アゲラーオス",
    "kind": "hero",
    "camp": "trojan",
-   "added_in": "loop_009"
+   "added_in": "loop_009",
+   "note": "**同名異人**。第11巻302行はヘクトールが討つアカイア方"
   },
   {
    "grc": "Ὄρμενος",
@@ -2955,6 +2958,396 @@
    "camp": "trojan",
    "note": "レーソスの従兄弟",
    "added_in": "loop_011"
+  },
+  {
+   "grc": "Τιθωνός",
+   "eng": "Tithonus",
+   "ja": "ティートーノス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "暁の夫"
+  },
+  {
+   "grc": "Κινύρης",
+   "eng": "Cinyras",
+   "ja": "キニュレース",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "キュプロスの王。胸当てを贈った"
+  },
+  {
+   "grc": "Κύπρος",
+   "eng": "Cyprus",
+   "ja": "キュプロス",
+   "kind": "place",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Πουλυδάμας",
+   "eng": "Polydamas",
+   "ja": "プーリュダマース",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan",
+   "note": "ヘクトールの僚友。評議に長ける"
+  },
+  {
+   "grc": "Πόλυβος",
+   "eng": "Polybus",
+   "ja": "ポリュボス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan",
+   "note": "アンテーノールの子"
+  },
+  {
+   "grc": "Βιάνωρ",
+   "eng": "Bianor",
+   "ja": "ビアーノール",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Ἶσος",
+   "eng": "Isus",
+   "ja": "イーソス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012",
+   "note": "プリアモスの庶子"
+  },
+  {
+   "grc": "Πείσανδρος",
+   "eng": "Peisander",
+   "ja": "ペイサンドロス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012",
+   "note": "アンティマコスの子"
+  },
+  {
+   "grc": "Ἀντίμαχος",
+   "eng": "Antimachus",
+   "ja": "アンティマコス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012",
+   "note": "アレクサンドロスの黄金を受けてヘレネー返還を拒んだ"
+  },
+  {
+   "grc": "Ἰφιδάμας",
+   "eng": "Iphidamas",
+   "ja": "イーピダマース",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "アンテーノールの子。トレーキアで育つ",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Κόων",
+   "eng": "Coon",
+   "ja": "コオーン",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "アンテーノールの長男。アガメムノーンを傷つける",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Εἰλείθυιαι",
+   "eng": "Eilithyiae",
+   "ja": "エイレイテュイア",
+   "kind": "god",
+   "added_in": "loop_012",
+   "note": "産みを司るヘーラーの娘たち"
+  },
+  {
+   "grc": "Νότος",
+   "eng": "Notus",
+   "ja": "ノトス",
+   "kind": "god",
+   "added_in": "loop_012",
+   "note": "南風"
+  },
+  {
+   "grc": "Ἀσαῖος",
+   "eng": "Asaeus",
+   "ja": "アサイオス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Αὐτόνοος",
+   "eng": "Autonous",
+   "ja": "アウトノオス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Ὀπίτης",
+   "eng": "Opites",
+   "ja": "オピテース",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Δόλοψ",
+   "eng": "Dolops",
+   "ja": "ドロプス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "achaean",
+   "note": "クリュティオスの子"
+  },
+  {
+   "grc": "Αἴσυμνος",
+   "eng": "Aesymnus",
+   "ja": "アイシュムノス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Ὦρος",
+   "eng": "Orus",
+   "ja": "オーロス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Ἱππόνοος",
+   "eng": "Hipponous",
+   "ja": "ヒッポノオス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "achaean"
+  },
+  {
+   "grc": "Θυμβραῖος",
+   "eng": "Thymbraeus",
+   "ja": "テュンブライオス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Μολίων",
+   "eng": "Molion",
+   "ja": "モリオーン",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan",
+   "note": "テュンブライオスの従者"
+  },
+  {
+   "grc": "Ἱππόδαμος",
+   "eng": "Hippodamus",
+   "ja": "ヒッポダモス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan"
+  },
+  {
+   "grc": "Ὑπείροχος",
+   "eng": "Hypeirochus",
+   "ja": "ヒュペイロコス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan",
+   "note": "**同名異人**。第11巻673行はイテュモネウスの父(エーリスの人)"
+  },
+  {
+   "grc": "Ἀγάστροφος",
+   "eng": "Agastrophus",
+   "ja": "アガストロポス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan",
+   "note": "パイオーンの子"
+  },
+  {
+   "grc": "Παίων",
+   "eng": "Paeon",
+   "ja": "パイオーン",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "camp": "trojan",
+   "note": "アガストロポスの父"
+  },
+  {
+   "grc": "Δηϊοπίτης",
+   "eng": "Deiopites",
+   "ja": "デーイオピテース",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Χερσιδάμας",
+   "eng": "Chersidamas",
+   "ja": "ケルシダマース",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Ἵππασος",
+   "eng": "Hippasus",
+   "ja": "ヒッパソス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012",
+   "note": "カロプスとソーコスの父"
+  },
+  {
+   "grc": "Σῶκος",
+   "eng": "Socus",
+   "ja": "ソーコス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012",
+   "note": "ヒッパソスの子。オデュッセウスを傷つける"
+  },
+  {
+   "grc": "Δόρυκλος",
+   "eng": "Doryclus",
+   "ja": "ドリュクロス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Πάνδοκος",
+   "eng": "Pandocus",
+   "ja": "パンドコス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Λύσανδρος",
+   "eng": "Lysander",
+   "ja": "リュサンドロス",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Πυλάρτης",
+   "eng": "Pylartes",
+   "ja": "ピュラルテース",
+   "kind": "hero",
+   "camp": "trojan",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Φαῦσις",
+   "eng": "Phausius",
+   "ja": "パウシオス",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "アピサーオーンの父",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Ἀπισάων",
+   "eng": "Apisaon",
+   "ja": "アピサーオーン",
+   "kind": "hero",
+   "camp": "trojan",
+   "note": "民の牧者。エウリュピュロスに討たれる",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Ἑκαμήδη",
+   "eng": "Hecamede",
+   "ja": "ヘカメーデー",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "ネストールの侍女。アルシノオスの娘"
+  },
+  {
+   "grc": "Ἀρσίνοος",
+   "eng": "Arsinous",
+   "ja": "アルシノオス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "ヘカメーデーの父"
+  },
+  {
+   "grc": "Ἰτυμονεύς",
+   "eng": "Itymoneus",
+   "ja": "イテュモネウス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "エーリスの人。若きネストールが討った"
+  },
+  {
+   "grc": "Αὐγείας",
+   "eng": "Augeias",
+   "ja": "アウゲイアース",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "エーリスの王"
+  },
+  {
+   "grc": "Μολίονε",
+   "eng": "Moliones",
+   "ja": "モリオネ",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "エペイオイの双子"
+  },
+  {
+   "grc": "Θρυόεσσα",
+   "eng": "Thryoessa",
+   "ja": "トリュオエッサ",
+   "kind": "place",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Μινυήϊος",
+   "eng": "Minyeius",
+   "ja": "ミニュエーイオス",
+   "kind": "place",
+   "note": "アレーネー近くの川",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Μούλιος",
+   "eng": "Mulius",
+   "ja": "ムーリオス",
+   "kind": "hero",
+   "note": "アウゲイアースの婿",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Ἀγαμήδη",
+   "eng": "Agamede",
+   "ja": "アガメーデー",
+   "kind": "hero",
+   "note": "アウゲイアースの長女。薬に通じる",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Κένταυροι",
+   "eng": "Centaurs",
+   "ja": "ケンタウロイ",
+   "kind": "people",
+   "added_in": "loop_012"
+  },
+  {
+   "grc": "Ποδαλείριος",
+   "eng": "Podalirius",
+   "ja": "ポダレイリオス",
+   "kind": "hero",
+   "added_in": "loop_012",
+   "note": "アスクレーピオスの子。医者",
+   "camp": "achaean"
   }
  ]
 }

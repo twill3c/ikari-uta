@@ -48,6 +48,16 @@ def main(book: int) -> int:
     fresh = {w: c for w, c in counts.items() if w not in gloss}
 
     print(f"=== 第 {book} 巻 ===")
+    print(
+        "※ 突き合わせは対訳表の英語見出し(eng)と英訳本文の語。"
+        "両者は同じ名前でも違う語になることがある"
+        "(Γοργώ は表では Gorgon、本文では Gorgo)。"
+    )
+    print(
+        "  したがって**新規の側には既登録語が紛れ、既出の側からは同じ数だけ漏れる**。"
+        "守りは既出側なので、登録前に必ず原語で引き直すこと"
+        "(python pipeline/measure_names.py --grc <原語の一部>)。"
+    )
     print(f"\n■ 既出 {len(known)} 語 —— 表記は凍結済み。この綴りをそのまま使う")
     for w in sorted(known, key=lambda w: -counts[w]):
         print(f"  {w:<16} {known[w]}  ({counts[w]})")
@@ -57,5 +67,19 @@ def main(book: int) -> int:
     return 0
 
 
+def lookup(fragment: str) -> None:
+    """原語の一部で対訳表を引く。新規かどうかの最終判断はこちらで行う。"""
+    for name in ("glossary.json", "glossary.catalogue.json"):
+        path = ROOT / "data" / name
+        if not path.exists():
+            continue
+        for e in json.loads(path.read_text(encoding="utf-8"))["entries"]:
+            if fragment in e["grc"]:
+                print(f"  {e['grc']} → {e['ja']}  (eng={e['eng']})")
+
+
 if __name__ == "__main__":
+    if len(sys.argv) > 2 and sys.argv[1] == "--grc":
+        lookup(sys.argv[2])
+        raise SystemExit(0)
     raise SystemExit(main(int(sys.argv[1])))
