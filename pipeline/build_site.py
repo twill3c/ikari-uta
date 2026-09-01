@@ -41,6 +41,29 @@ def footer() -> str:
 </footer>"""
 
 
+# フリート共通フッタ(koho-lens が正本)。5 項目・この並び・下部固定。
+# 著作権表示はリンクの文言に含めず、MIT License の直後の地の文にする。
+REPO = "https://github.com/twill3c/ikari-uta"
+ARUKIKATA = "https://claude.ai/code/artifact/627e03d1-c6ee-4021-b5f5-9982fe0497fe"
+SEKKEIZU = "https://claude.ai/code/artifact/6e34d357-2e85-4140-ba57-e761de55cae4"
+APP_MENU = "https://app-menu-amber.vercel.app/"
+
+
+def fleet_footer() -> str:
+    """フリート規約のフッタ。出典表示(footer())とは別物なので混ぜない。"""
+    sep = '<span class="sep">・</span>'
+    return (
+        '<nav class="fleet" aria-label="フリート共通リンク"><!-- fleet: fixed footer -->'
+        f'<a href="{REPO}/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>'
+        " © 2026 坂田哲朗"
+        f'{sep}<a href="{REPO}" target="_blank" rel="noopener">GitHub</a>'
+        f'{sep}<a href="{ARUKIKATA}" target="_blank" rel="noopener">怒り歌の歩き方</a>'
+        f'{sep}<a href="{SEKKEIZU}" target="_blank" rel="noopener">怒り歌 設計図</a>'
+        f'{sep}<a href="{APP_MENU}" target="_blank" rel="noopener">App Menu</a>'
+        "</nav>"
+    )
+
+
 def load_books() -> list[dict]:
     books = []
     for path in sorted(CANONICAL_DIR.glob("book-*.json")):
@@ -165,6 +188,7 @@ def render_index(manifest: dict) -> str:
 </section>
 </main>
 {footer()}
+{fleet_footer()}
 </body>
 </html>
 """
@@ -236,6 +260,7 @@ def render_name_index(page: str, title: str, sub: str, records: list[dict]) -> s
 </section>
 </main>
 {footer()}
+{fleet_footer()}
 </body>
 </html>
 """
@@ -262,6 +287,7 @@ def render_reader() -> str:
 </header>
 <main><div id="text" class="text"></div></main>
 {footer()}
+{fleet_footer()}
 <script src="reader.js"></script>
 </body>
 </html>

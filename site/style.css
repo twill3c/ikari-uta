@@ -209,3 +209,33 @@ header .home { margin: 0 0 .3rem; font-size: .9rem; }
   ol.names .occ a { border-color: #445; }
   ol.names .camp { border-color: #555; color: #aaa; }
 }
+
+/* fleet: fixed footer —— フリート共通規約(koho-lens が正本)。
+   5 項目・この並び・下部固定。出典表示の <footer> とは別物。
+   固定するぶん、body に逃げを作らないと本文の末尾が隠れる。
+   区切りの「・」は文字として置く(::before で描くと innerText に出ず、検品器から見えない)。 */
+nav.fleet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: var(--card);
+  border-top: 1px solid var(--rule);
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--muted);
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif;
+}
+nav.fleet a { color: var(--accent); text-decoration: none; }
+nav.fleet a:hover,
+nav.fleet a:focus-visible { text-decoration: underline; }
+nav.fleet .sep { color: var(--rule); padding: 0 0.35rem; }
+
+/* 逃げ。狭い幅では 2 行に折り返して高くなるので、そのぶん厚く取る。 */
+body { padding-bottom: 3.4rem; }
+@media (max-width: 34rem) {
+  body { padding-bottom: 5.6rem; }
+}
