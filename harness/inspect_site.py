@@ -78,6 +78,29 @@ def check(page, url: str, label: str, must_contain: list[str], failures: list[st
         page.screenshot(path=str(SHOTS / f"{label}-{wname}.png"), full_page=False)
 
 
+def check_index_links(page, base: str, failures: list[str]) -> None:
+    """索引の行リンクを実際に踏んで、その行が読む画面に現れることを確かめる。
+
+    T-036 はデータの上で「実在する行を指している」ことを見る。
+    こちらは**踏んだ先に本当に出るか**を実ブラウザで見る —— 別のことである。
+    """
+    page.goto(f"{base}/people.html", wait_until="networkidle")
+    href = page.eval_on_selector("ol.names .occ a", "a => a.getAttribute('href')")
+    if not href or "#l" not in href:
+        failures.append(f"索引の行リンクが取れない: {href!r}")
+        return
+    want = href.split("#l")[1]
+    page.goto(f"{base}/{href}", wait_until="networkidle")
+    page.wait_for_timeout(200)
+    if page.locator(f"#l{want}").count() == 0:
+        failures.append(f"索引のリンク先に行 {want} が無い({href})")
+    # 陰性対照: 底本に無い行を指したら、その行は現れないこと
+    page.goto(f"{base}/read.html?book=9#l459", wait_until="networkidle")
+    page.wait_for_timeout(200)
+    if page.locator("#l459").count():
+        failures.append("欠番 9:459 が行として描かれている(この対照は何も見ていない)")
+
+
 def check_gap_note(page, base: str, failures: list[str]) -> None:
     """欠番注記の陽性・陰性対照(HC-041)。
 
@@ -149,6 +172,14 @@ def main() -> int:
             # 未訳の巻を見たいときは、その時点で未訳の巻を manifest から取る。
             check(page, f"{base}/read.html?book=9", "read-book09",
                   ["第 9 巻", "709 行", "底本の欠番"], failures)
+            # 索引の 2 ページ。**行へ跳ぶリンクが実在の行を指すこと**は T-036 が見る。
+            # ここで見るのは、画面に出ていることと、限界の但し書きが消えていないこと。
+            check(page, f"{base}/people.html", "people",
+                  ["登場者一覧", "アキレウス", "ヘクトール", "綴りでは分けられない",
+                   "英訳を独立の証人として"], failures)
+            check(page, f"{base}/places.html", "places",
+                  ["地名一覧", "トロイア", "イーデー", "綴りでは分けられない"], failures)
+            check_index_links(page, base, failures)
             check_gap_note(page, base, failures)
             browser.close()
     finally:

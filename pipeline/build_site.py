@@ -153,6 +153,12 @@ def render_index(manifest: dict) -> str:
  実際に本文がある行は {total:,} 行しかない。差の {maxsum - total} 行は第 9 巻 458–461・第 11 巻 543・第 14 巻 269 で、
  校訂者が本文から除きながら番号を残したものである。第 9 巻は 457 の次が 462 になる。</p>
 </section>
+<section class="idxlinks">
+ <h2>索引</h2>
+ <p><a href="people.html">登場者一覧</a>(神・英雄・馬)・
+ <a href="places.html">地名一覧</a>(土地・民族)。
+ いずれも<b>底本の原文で出現を数え</b>、その行へ跳べる。</p>
+</section>
 <section>
  <h2>巻</h2>
  <ol class="books">{"".join(rows)}</ol>
@@ -163,6 +169,76 @@ def render_index(manifest: dict) -> str:
 </html>
 """
 
+
+
+INDEX_ACCURACY = 90.2   # 英訳を独立の証人にした実測(pipeline/build_index.measure)
+
+
+def render_name_index(page: str, title: str, sub: str, records: list[dict]) -> str:
+    """登場者一覧 / 地名一覧。
+
+    出現行は**原文の中で語幹を探して**求めたものであり、訳文から拾ってはいない
+    (訳文から拾えば、私が書いたものを私が数えるだけで循環する)。
+    近似なので、精度を英訳で実測した数字をそのまま画面に出す。
+    """
+    items = []
+    for r in records:
+        occ = r["occ"]
+        links = " ".join(
+            f'<a href="read.html?book={b}#l{n}">{b}:{n}</a>' for b, n in occ[:12]
+        )
+        more = f'<span class="more">ほか {len(occ) - 12} 箇所</span>' if len(occ) > 12 else ""
+        amb = (
+            f'<p class="amb">綴りでは分けられない: {"、".join(r["shared_with"])}</p>'
+            if r["shared_with"] else ""
+        )
+        note = f'<p class="gnote">{r["note"]}</p>' if r.get("note") else ""
+        camp = {"achaean": "アカイア方", "trojan": "トロイア方"}.get(r.get("camp") or "", "")
+        items.append(
+            f'<li><div class="hd"><b class="ja">{r["ja"]}</b>'
+            f'<span class="grc">{r["grc"]}</span>'
+            f'<span class="cnt">{r["count"]} 行</span>'
+            + (f'<span class="camp">{camp}</span>' if camp else "")
+            + f"</div>{amb}{note}"
+            f'<p class="occ">{links} {more}</p></li>'
+        )
+    return f"""<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>怒り歌 — {title}</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <p class="home"><a href="index.html">← 目次</a></p>
+ <h1>{title}</h1>
+ <p class="sub">{sub}</p>
+</header>
+<main>
+<section class="facts">
+ <h2>この一覧の作り方と、その限界</h2>
+ <p>出現行は<b>底本のギリシア語の中で語幹を探して</b>求めた。訳文からは拾っていない
+ —— 自分の書いた訳を自分で数えては、何も確かめたことにならないからである。</p>
+ <p>ギリシア語は格変化するので、一致は<b>近似</b>である。その当たり外れを、
+ <b>英訳を独立の証人として</b>実測した:標本 1,691 箇所のうち
+ <b>{INDEX_ACCURACY}%</b> で、同じ行を含む英訳の段落に対応する名が現れた。
+ 残りの多くは英訳が別の語を使う場合(風の名や父称)で、一部は下記の取り違えである。</p>
+ <p class="note"><b>綴りでは分けられない組がある。</b>同名異人・同名異物は文字列では
+ 区別できない。第 16 巻には三人のクサントス(川・パイノプスの子・アキレウスの馬)がおり、
+ 綴りは同じである。そうした見出しには「綴りでは分けられない」と記した。
+ <b>数はその群の合計であり、その見出し一人ぶんではない。</b></p>
+</section>
+<section>
+ <h2>{title}(出現の多い順・{len(records)} 件)</h2>
+ <ol class="names">{"".join(items)}</ol>
+</section>
+</main>
+{footer()}
+</body>
+</html>
+"""
 
 def render_reader() -> str:
     return f"""<!DOCTYPE html>
@@ -217,6 +293,21 @@ def build() -> dict:
 
     (OUT_DIR / "index.html").write_text(render_index(manifest), encoding="utf-8")
     (OUT_DIR / "read.html").write_text(render_reader(), encoding="utf-8")
+
+    import sys as _sys
+    _sys.path.insert(0, str(PROJECT_ROOT))   # 直接起動でも pipeline を解決する
+    from pipeline.build_index import to_records
+    pages = to_records()
+    (OUT_DIR / "people.html").write_text(
+        render_name_index("people", "登場者一覧",
+                          "神・英雄・馬。底本の原文で出現を数え、行へ跳ぶ",
+                          pages["people"]), encoding="utf-8")
+    (OUT_DIR / "places.html").write_text(
+        render_name_index("places", "地名一覧",
+                          "土地・民族。底本の原文で出現を数え、行へ跳ぶ",
+                          pages["places"]), encoding="utf-8")
+    (out_data / "name-index.json").write_text(
+        json.dumps(pages, ensure_ascii=False), encoding="utf-8")
     for name in ("style.css", "reader.js"):
         shutil.copyfile(ASSETS / name, OUT_DIR / name)
 

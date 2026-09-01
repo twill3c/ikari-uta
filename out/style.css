@@ -185,3 +185,27 @@ footer .meta { opacity: 0.75; }
   border: 1px solid var(--accent);
   color: var(--accent);
 }
+
+/* 索引(登場者一覧・地名一覧) */
+.idxlinks p { margin: .3rem 0 0; }
+ol.names { list-style: none; padding: 0; margin: 0; }
+ol.names > li { border-top: 1px solid var(--rule, #ddd); padding: .55rem 0; }
+ol.names .hd { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem; }
+ol.names .ja { font-size: 1.05rem; }
+ol.names .grc { color: #666; font-size: .9rem; }
+ol.names .cnt { margin-left: auto; font-variant-numeric: tabular-nums; color: #555; font-size: .85rem; }
+ol.names .camp { font-size: .75rem; padding: 0 .35rem; border: 1px solid #bbb; border-radius: 3px; color: #555; }
+ol.names .amb { margin: .2rem 0 0; font-size: .82rem; color: #a4500a; }
+ol.names .gnote { margin: .2rem 0 0; font-size: .82rem; color: #555; }
+ol.names .occ { margin: .25rem 0 0; font-size: .85rem; line-height: 1.9; }
+ol.names .occ a { display: inline-block; padding: 0 .3rem; border: 1px solid #ccd; border-radius: 3px;
+                  text-decoration: none; font-variant-numeric: tabular-nums; }
+ol.names .more { color: #777; font-size: .8rem; }
+header .home { margin: 0 0 .3rem; font-size: .9rem; }
+@media (prefers-color-scheme: dark) {
+  ol.names > li { border-top-color: #333; }
+  ol.names .grc, ol.names .cnt, ol.names .gnote { color: #aaa; }
+  ol.names .amb { color: #e0a24a; }
+  ol.names .occ a { border-color: #445; }
+  ol.names .camp { border-color: #555; color: #aaa; }
+}
